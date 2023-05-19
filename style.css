@@ -19,6 +19,25 @@ nav {
   background-color: #f8f8f8;
 }
 
+/* fonts */
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -127,14 +146,15 @@ nav a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  padding: 20px;
 }
 
 .widget {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   border: 2px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
@@ -173,7 +193,8 @@ nav a {
 .widget-button {
   padding: 10px 20px;
   font-size: 16px;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight:700;
   text-decoration: none;
   color: #fff;
   background-color: #333;
@@ -183,8 +204,8 @@ nav a {
 
 
 
-@media (max-width: 768px) {
-  .grid {
+@media (max-width: 850px) {
+  .widget-grid{
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -203,7 +224,7 @@ nav a {
 
   }
   @media (max-width: 480px) {
-    .grid {
-      grid-template-columns: 1fr;
+    .widget-grid {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
