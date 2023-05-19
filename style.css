@@ -19,6 +19,13 @@ nav {
   background-color: #f8f8f8;
 }
 
+/* background image */
+
+body {
+  background-image: url('images/background2.png');
+}
+
+
 /* fonts */
 
 h1 {
@@ -163,9 +170,12 @@ nav a {
 /* Set up the left part of the widget */
 .widget-left {
   flex: 1;
+  height: 100%;
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: forestgreen;
+  background-size: cover;
 }
 
 /* Set up the right part of the widget */
