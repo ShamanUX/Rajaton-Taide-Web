@@ -121,6 +121,14 @@ nav a {
   
 /* CONCERT INFO WIDGET */
 
+/* Widget grid */
+
+.widget-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .widget {
   display: flex;
   align-items: center;
@@ -172,27 +180,26 @@ nav a {
   border-radius: 5px;
 }
 
-.thumbnail {
-  object-fit: cover;
-}
 
-  @media (max-width: 768px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
 
-    .burger-menu {
-      display: block;
-      cursor: pointer;
-    }
-  
-    nav ul {
-      display: none;
-    }
-  
-    .sidebar-nav-links {
-      margin: 0;
-    }
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .sidebar-nav-links {
+    margin: 0;
+  }
 
   }
   @media (max-width: 480px) {
