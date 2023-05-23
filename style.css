@@ -16,17 +16,62 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f8f8f8;
+  margin: auto;
+  width: 50%;
+  background-color: #333;
 }
 
-/* background image */
+
+.headerSection {
+  
+  min-height: 500px;
+  display: flex;
+  background-color: #2a9c4c70;
+  background-size: cover;
+}
+
+.header-left {
+  width: 300px;
+  display: block;
+}
+
+.header-right {
+  background-image: url('images/Violin\ by\ the\ river.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom -100px ;
+  flex: 1;
+  background-color: #2935a770;
+  min-height: 100%;
+  background-size: cover;
+}
 
 body {
-  background-image: url('images/background2.png');
+  background-color: #ccc;
+  background-size: cover;
+  margin: 0;
+}
+
+.bodycontent{
+  padding: 5px;
+}
+
+.logo {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
 }
 
 
 /* fonts */
+
+.centerText{
+  text-align: center;
+}
+
+.headingMain {
+  padding: 20px;
+}
 
 h1 {
   font-family: 'Merriweather', serif;
@@ -47,16 +92,19 @@ button {
 
 nav ul {
   list-style: none;
-  display: flex;
+  display: block;
+  
 }
 
 nav li {
-  margin: 0 10px;
+  margin: 10px 10px;
+
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
+  font-family: 'Merriweather', serif;
 }
 
 
