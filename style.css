@@ -21,7 +21,6 @@ nav {
   background-color: #333;
 }
 
-
 .headerSection {
   
   min-height: 500px;
@@ -82,6 +81,12 @@ h2 {
   font-family: 'Merriweather', serif;
 }
 
+
+h3 {
+  font-family: 'Merriweather', serif;
+}
+
+
 p {
   font-family: 'Merriweather', serif;
 }
@@ -107,91 +112,6 @@ nav a {
   font-family: 'Merriweather', serif;
 }
 
-
-
-/* css for the Grid elements */
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-  }
-  
-  .grid-item {
-    position: relative;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-  }
-  
-  /* Set up the front face of the grid item */
-  .grid-item-front {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #eee;
-    backface-visibility: hidden;
-    z-index: 2;
-  }
-
-  /* Set up the back face of the grid item */
-  .grid-item-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    color: #fff;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-    z-index: 1;
-  }
-
-  /* Set up the flip animation */
-  @keyframes flip {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(180deg); }
-  }
-
-  /* Flip the grid item when clicked */
-  .grid-item.flipped {
-    animation-name: flip;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-  }
-
-  .item-content {
-    padding: 20px;
-  }
-  
-  .item-content h3 {
-    font-size: 18px;
-    margin: 0 0 10px;
-  }
-  
-  .item-content p {
-    margin: 0;
-  }
-  
-  .item-content img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .background-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-  }
   
 
 /*MODAL START*/
@@ -243,7 +163,7 @@ nav a {
 
 .widget-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
 }
@@ -266,9 +186,11 @@ nav a {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: forestgreen;
+  background-color: rgb(180, 236, 180);
   background-size: cover;
 }
+
+
 
 /* Set up the right part of the widget */
 .widget-right {
@@ -285,11 +207,28 @@ nav a {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+  min-height: 3em;
 }
 
-.widget-description {
-  font-size: 16px;
-  margin-bottom: 20px;
+ul.widget-shortInfo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.widget-shortInfo li {
+  margin-bottom: 5px;
+}
+
+ul.widget-shortInfo li:last-child{
+  margin-bottom: 50px;
+}
+
+
+
+.widget-buttonRow {
+  display: flex;
+  gap: 20px;
 }
 
 .widget-button {
@@ -299,11 +238,31 @@ nav a {
   font-weight:700;
   text-decoration: none;
   color: #fff;
-  background-color: #333;
+  background-color: #52287b;
   border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.widget-infoButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:700;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  display: block;
+  border-radius: 5px;
+  border-width: 0;
 }
 
 
+.viewIcon {
+  width: 24px;
+  filter: brightness(0) invert(1);
+  pointer-events: none;
+}
 
 
 @media (max-width: 850px) {
