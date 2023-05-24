@@ -245,6 +245,7 @@ ul.widget-shortInfo li:last-child{
 }
 
 .widget-infoButton {
+  cursor: pointer;
   padding: 10px 20px;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
@@ -255,6 +256,11 @@ ul.widget-shortInfo li:last-child{
   display: block;
   border-radius: 5px;
   border-width: 0;
+  transition: all 0.2s ease-out;
+}
+
+.hovered {
+  background-color: #818181 !important; 
 }
 
 

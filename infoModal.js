@@ -44,8 +44,17 @@ for (var i = 0; i < buttons.length; i++) {
     var eventID = event.target.getAttribute("eventID");
     openModal(eventID);
   });
+  buttons[i].addEventListener("mouseenter", mouseEnter)
+  buttons[i].addEventListener("mouseleave", mouseLeave)
 }
 
+function mouseEnter(){
+  this.classList.add('hovered');
+}
+
+function mouseLeave(){
+  this.classList.remove('hovered');
+}
 
 // Event listener for closing the modal with the escape key
 document.addEventListener("keydown", function(event) {
@@ -53,6 +62,12 @@ document.addEventListener("keydown", function(event) {
     modal.style.display = "none";
   }
 });
+
+
+//Hover Animation/Transition
+
+
+
 
 /* Event data */
 
