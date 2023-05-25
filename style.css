@@ -1,3 +1,32 @@
+/*
+
+Accent Colours: 
+
+Yellow = #F5DC00
+Green = #52CC00
+Purple = #52287B
+Teal = #00B2CA
+Orange= #FF6933
+
+*/
+
+
+:root{
+  --accent-yellow: #F5DC00;
+  --accent-green: #52CC00;
+  --accent-purple: #52287B;
+  --accent-orange: #FF6933;
+  --accent-teal: #00B2CA;
+}
+
+.solid-divider {
+  box-shadow: none;
+  border-top: solid 1px lightgrey;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+
 /* Burger Menu Styling */
 .burger-menu {
   display: none;
@@ -25,7 +54,7 @@ nav {
   
   min-height: 500px;
   display: flex;
-  background-color: #2a9c4c70;
+  background-color: #774711;
   background-size: cover;
 }
 
@@ -46,13 +75,14 @@ nav {
 }
 
 body {
-  background-color: #ccc;
+  background-color: none;
   background-size: cover;
   margin: 0;
 }
 
 .bodycontent{
   padding: 5px;
+  background: linear-gradient(45deg, #00B2CA, #01334e 99%);
 }
 
 .logo {
@@ -70,6 +100,8 @@ body {
 
 .headingMain {
   padding: 20px;
+  text-align: center;
+  color: #f0f0f0;
 }
 
 h1 {
@@ -102,7 +134,7 @@ nav ul {
 }
 
 nav li {
-  margin: 10px 10px;
+  margin: 10px 0;
 
 }
 
@@ -131,20 +163,65 @@ nav a {
 
 
 /* Modal Content/Box */
+.modalContent-inner {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 90%;
+}
+
+
 .modalContent {
+  position: relative;
+  border-radius: 10px;
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal-left {
+  min-width: 50%;
+}
+
+.modal-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#eventTitle {
+  padding-top: 0px;
+  margin-top: 0px;
+  width: 90%;
+  background-color: #00B2CA;
+}
+
+#eventImage {
+  width: 80%;
+}
+
+#eventImage-caption {
+  text-align: center;
 }
 
 /* The Close Button */
 .close {
   color: #aaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
+  position: absolute;
+  right: 5px;
+  top: 0;
 }
 
 .close:hover,
@@ -177,6 +254,7 @@ nav a {
   border: 2px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
+  color: #333;
 }
 
 /* Set up the left part of the widget */
@@ -186,11 +264,27 @@ nav a {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgb(180, 236, 180);
+  background-color: #f5c800;
   background-size: cover;
 }
 
+/* color classes for widget */
 
+.green {
+  background-color: #52CC00;
+}
+
+.orange {
+  background-color: #FF6933;
+}
+
+.teal {
+  background-color: #00B2CA;
+}
+
+.yellowish {
+  background:  linear-gradient(320deg,#f5c800, #ffde4a);
+}
 
 /* Set up the right part of the widget */
 .widget-right {
@@ -290,8 +384,17 @@ ul.widget-shortInfo li:last-child{
   }
 
   }
-  @media (max-width: 480px) {
-    .widget-grid {
-      grid-template-columns: repeat(1, 1fr);
-    }
+@media (max-width: 480px) {
+  .widget-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
+
+  .modalContent-inner {
+    flex-direction: column;
+  }
+
+  .modal-right{
+    padding-top: 20px;
+  }
+
+}

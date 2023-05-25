@@ -41,23 +41,33 @@
 
       <!-- MODAL -->
       <div id="infoModal" class="modal">
-        <div class="modalContent">
-          <span class="close">&times;</span>
-          <h2 id="eventTitle">Eventin nimi</h2>
-          <h3 id="eventDate">16.6.</h3>
-          <h3 id="eventClock">16:00</h3>
-          <h3 id="eventPrice">15/10 €</h3>
-          <p id="eventDescription">Liirum laarum</p>
-          <img id="eventImage" src="images/Cranberrythumbnail.png">
+          
+          <div class="modalContent">
+  
+            <span class="close">&times;</span>
+            <h2 id="eventTitle">Eventin nimi</h2>
+            <div class="solid-divider"></div>
+            <div class="modalContent-inner">
+              <div class="modal-left">
+                <h3 id="eventDate">16.6.</h3>
+                <h3 id="eventClock">16:00</h3>
+                <h3 id="eventPrice">15/10 €</h3>
+                <p id="eventDescription">Liirum laarum</p>
+              </div>
+              <div class="modal-right">
+                <img id="eventImage" src="images/Cranberrythumbnail.png">
+                <figcaption id="eventImage-caption"> This is a Placeholder caption </figcaption>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
       <!-- MODAL -->
 
-      <h1 class="headingMain">Ohjelma</h1>
+      <h1 class="headingMain">Ohjelma 2023</h1>
       <div class="widget-grid">
         <!-- RAJATON KOHTAAMINEN -->
         <div class="widget">
-          <div class="widget-left">
+          <div class="widget-left green">
             <h2 class="widget-title">Rajaton kohtaaminen</h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">2.9. | 19:00</h3></li>
@@ -65,7 +75,7 @@
               <li><h3 class="widget-description">25/22 €</h3></li>
             </ul>
             <div class="widget-buttonRow">
-              <a href="#" class="widget-button">LIPUT</a>
+              <a href="#" class="widget-button">LIPUT &gt;</a>
               <button href="#" class="widget-infoButton" eventID="rajaton"><img class="viewIcon" src="images/focus.png"></button>
             </div>
           </div>
@@ -81,7 +91,7 @@
               <li><h3 class="widget-description">25 / 22 €</h3></li>
             </ul>
             <div class="widget-buttonRow">
-              <a href="#" class="widget-button">LIPUT</a>
+              <a href="#" class="widget-button">LIPUT &gt;</a>
               <button href="#" class="widget-infoButton" eventID="ystavat"><img class="viewIcon" src="images/focus.png"></button>
             </div>
           </div>
@@ -89,16 +99,48 @@
         </div>
         <!-- KARJALAISTA JA KANSAINVÄLISTÄ -->
         <div class="widget">
-          <div class="widget-left">
+          <div class="widget-left yellowish">
             <h2 class="widget-title">Karjalaista ja kansainvälistä</h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">2.9. | 19:00</h3></li>
               <li><h3 class="widget-description">Joensuun konservatorio</h3></li>
-              <li><h3 class="widget-description">20 / 17 € €</h3></li>
+              <li><h3 class="widget-description">20 / 17 € </h3></li>
             </ul>
             <div class="widget-buttonRow">
-              <a href="#" class="widget-button">LIPUT</a>
+              <a href="#" class="widget-button">LIPUT &gt;</a>
               <button href="#" class="widget-infoButton" eventID="karjalaista"><img class="viewIcon" src="images/focus.png"></button>
+            </div>
+          </div>
+          <div class="widget-right"></div>
+        </div>
+        <!-- ELECTRONIC IN THE TROPICS -->
+        <div class="widget">
+          <div class="widget-left orange">
+            <h2 class="widget-title">Electronic in the tropics</h2>
+            <ul class="widget-shortInfo">
+              <li><h3 class="widget-description">2.9. | 19:00</h3></li>
+              <li><h3 class="widget-description">Botania</h3></li>
+              <li><h3 class="widget-description">9 €</h3></li>
+            </ul>
+            <div class="widget-buttonRow">
+              <a href="#" class="widget-button">LIPUT &gt;</a>
+              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="images/focus.png"></button>
+            </div>
+          </div>
+          <div class="widget-right"></div>
+        </div>
+        <!-- Lasten Musiikkiviidakko -->
+        <div class="widget">
+          <div class="widget-left teal">
+            <h2 class="widget-title">Lasten Musiikkiviidakko</h2>
+            <ul class="widget-shortInfo">
+              <li><h3 class="widget-description">27.8. | 11:00-15:00</h3></li>
+              <li><h3 class="widget-description">Botania</h3></li>
+              <li><h3 class="widget-description"> Ilmainen pääsy </h3></li>
+            </ul>
+            <div class="widget-buttonRow">
+              <a href="#" class="widget-button">LIPUT &gt;</a>
+              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="images/focus.png"></button>
             </div>
           </div>
           <div class="widget-right"></div>
@@ -113,18 +155,25 @@
               <li><h3 class="widget-description">9 €</h3></li>
             </ul>
             <div class="widget-buttonRow">
-              <a href="#" class="widget-button">LIPUT</a>
+              <a href="#" class="widget-button">LIPUT &gt;</a>
               <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="images/focus.png"></button>
             </div>
           </div>
           <div class="widget-right"></div>
         </div>
       </div>
+      </div>
+      
+      </div>
       
       
     
     <script src="script.js"></script>
     <script src="infoModal.js"></script>
+    <script>document.write('<script src="http://'
+      + (location.host || 'localhost').split(':')[0]
+      + ':35729/livereload.js?snipver=1"></'
+      + 'script>')</script>
     
   </body>
 </html>
