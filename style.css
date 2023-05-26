@@ -30,23 +30,23 @@ Orange= #FF6933
 /* Burger Menu Styling */
 .burger-menu {
   display: none;
+  justify-self: left;
 }
 
-.burger {
-  width: 30px;
-  height: 3px;
-  background-color: #333;
-  margin: 5px;
+#burger-logo{
+  filter: invert(1);
 }
+
 
 /* Navigation Styling */
 nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   margin: auto;
-  width: 50%;
+  width: auto;
   background-color: #333;
 }
 
@@ -69,24 +69,33 @@ nav {
   height: 100%;
 }
 
-.header-content {
+.header-banner {
   z-index: 1;
   position: absolute;
-  background-color: #00B2CA;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #main-title {
   text-align: center;
+  background-color: #fdb123c9;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .header-left {
   width: 300px;
   display: block;
   background: linear-gradient(-45deg,#52287B, #723aaa 50%) ;
+  background-image: url("images/pexels-anni-roenkae-4175060.jpg");
+  background-size: cover;
+
 }
 
 .header-right {
@@ -170,7 +179,7 @@ button {
   font-family: 'Roboto', sans-serif;
 }
 
-nav ul {
+#nav-links {
   list-style: none;
   display: block;
   
@@ -246,7 +255,6 @@ nav a {
   padding-top: 0px;
   margin-top: 0px;
   width: 90%;
-  background-color: #00B2CA;
 }
 
 #eventImage {
@@ -419,20 +427,34 @@ ul.widget-shortInfo li:last-child{
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .headerSection {
+    flex-direction: column;
+  }
+
   .burger-menu {
     display: block;
     cursor: pointer;
   }
 
-  nav ul {
+  #nav-links {
     display: none;
+  }
+
+  #nav-links.show {
+    display: block;
   }
 
   .sidebar-nav-links {
     margin: 0;
   }
 
+  .header-left {
+    width: auto;
   }
+
+}
+
+
 @media (max-width: 480px) {
   .widget-grid {
     grid-template-columns: repeat(1, 1fr);

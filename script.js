@@ -1,6 +1,7 @@
 const burgerMenu = document.querySelector(".burger-menu");
-const sidebar = document.querySelector(".sidebar");
+const navLinks = document.getElementById("nav-links");
 
 burgerMenu.addEventListener("click", () => {
-  sidebar.classList.toggle("sidebar-open");
+  
+  navLinks.classList.toggle('show');
 });
