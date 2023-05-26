@@ -125,8 +125,15 @@ body {
   text-align: center;
 }
 
-#main-title{
+#main-title {
+  color: #333;
+}
+
+#slogan{
+  text-align: center;
   font-family: 'legault';
+  color: #333;
+  font-size: 50px;
 }
 
 .body-heading {
