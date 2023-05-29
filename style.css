@@ -47,17 +47,18 @@ nav {
   padding: 20px;
   margin: auto;
   width: auto;
-  background-color: #333;
+  background-color: #be520aa7;
 }
 
 .headerSection {
   
-  min-height: 500px;
-  display: flex;
+  min-height: 100vh;
+  display: block;
   background-color: #b46a16;
   background-size: cover;
   overflow: hidden;
   position: relative;
+  background-image: url('images/Violin\ by\ the\ river.png');
 }
 
 .header-background {
@@ -120,7 +121,7 @@ body {
 
 .logo {
   display: block;
-  width: 50%;
+  width: 10%;
   margin: 0 auto;
 }
 
@@ -132,6 +133,8 @@ body {
 
 .centerText{
   text-align: center;
+  color: #fff;
+  font-size: 40px;
 }
 
 #main-title {
@@ -141,7 +144,7 @@ body {
 #slogan{
   text-align: center;
   font-family: 'legault';
-  color: #333;
+  color: #fff;
   font-size: 50px;
 }
 
@@ -165,11 +168,9 @@ h2 {
   font-family: 'Merriweather', serif;
 }
 
-
 h3 {
   font-family: 'Merriweather', serif;
 }
-
 
 p {
   font-family: 'Merriweather', serif;
@@ -179,21 +180,30 @@ button {
   font-family: 'Roboto', sans-serif;
 }
 
+.stroked-text {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+/* fonts end */
+
 #nav-links {
   list-style: none;
-  display: block;
+  padding: 0;
+  display: flex;
+  gap: 20px;
   
 }
 
 nav li {
   margin: 10px 0;
-
 }
 
 nav a {
   text-decoration: none;
   color: #fff;
   font-family: 'Merriweather', serif;
+  font-size: 20px;
+  font-weight: 700;
 }
 
   
