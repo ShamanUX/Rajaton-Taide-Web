@@ -22,7 +22,7 @@ function openModal(eventID) {
   eventClock.textContent = event.clock;
   eventPrice.textContent = event.price;
   eventDate.textContent = event.date;
-  
+  eventImage.src = event.image;
   
   modal.style.display = "block";
 }
@@ -78,7 +78,8 @@ var eventData = {
       "clock": "18:00",
       "date": "2.9.",
       "price": "25 / 22 €",
-      "venue": "Carelia-sali"
+      "venue": "Carelia-sali",
+      "image": "images/ClefPainted.jpg" 
     },
     "ystavat": {
       "title": "Olkaa hyvät, rakkaat ystävät",

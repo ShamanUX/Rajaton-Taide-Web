@@ -56,6 +56,7 @@ nav {
   display: block;
   background-color: #b46a16;
   background-size: cover;
+  background-position: center;
   overflow: hidden;
   position: relative;
   background-image: url('images/Violin\ by\ the\ river.png');
@@ -80,32 +81,23 @@ nav {
   width: 100%;
   display: flex;
   justify-content: center;
+  color: #333 !important;
 }
 
-#main-title {
+#header-hook {
   text-align: center;
   background-color: #fdb123c9;
   justify-content: center;
   padding: 10px;
   border-radius: 10px;
+  color: #333 !important;
 }
 
-.header-left {
-  width: 300px;
-  display: block;
-  background: linear-gradient(-45deg,#52287B, #723aaa 50%) ;
-  background-image: url("images/pexels-anni-roenkae-4175060.jpg");
-  background-size: cover;
-
-}
-
-.header-right {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex: 1;
-  background-color: none;
-  min-height: 100%;
+.header-info {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 body {
@@ -114,30 +106,29 @@ body {
   margin: 0;
 }
 
-.bodycontent{
+.body-content{
   padding: 5px;
-  background: linear-gradient(-45deg,#01334e, #00B2CA 90%);
+  background: linear-gradient(25deg,#fff9f0 85%, #eb750883 );
+  background-color: #fff9f0;
 }
 
 .logo {
   display: block;
+  min-width: 100px;
   width: 10%;
   margin: 0 auto;
 }
 
 
-
-
-
 /* fonts */
 
-.centerText{
+.header-date{
   text-align: center;
   color: #fff;
   font-size: 40px;
 }
 
-#main-title {
+#header-hook {
   color: #333;
 }
 
@@ -146,6 +137,7 @@ body {
   font-family: 'legault';
   color: #fff;
   font-size: 50px;
+  -webkit-text-stroke-width: 1px;
 }
 
 .body-heading {
@@ -180,11 +172,53 @@ button {
   font-family: 'Roboto', sans-serif;
 }
 
-.stroked-text {
+.text-shadow {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
+.text-stroke {
+  -webkit-text-stroke: 1px #ad5809;
+}
+
+.text-stroke-outside {
+  text-shadow:
+    -2px -2px 0 #ad5809,
+     0   -2px 0 #ad5809,
+     2px -2px 0 #ad5809,
+     2px  0   0 #ad5809,
+     2px  2px 0 #ad5809,
+     0    2px 0 #ad5809,
+    -2px  2px 0 #ad5809,
+    -2px  0   0 #ad5809;
+}
+
 /* fonts end */
+
+/* icons */
+
+.scroll-icon-container {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto;
+  background-color: #be520ad2;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: solid 2px white;
+}
+
+.header-scroll-icon {
+  max-width: 24px;
+  filter: invert(1);
+}
+
+
+/* icons end */
+
+
 
 #nav-links {
   list-style: none;
@@ -325,7 +359,7 @@ nav a {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #f5c800;
+  background-color: none !important;
   background-size: cover;
 }
 
@@ -397,6 +431,7 @@ ul.widget-shortInfo li:last-child{
   border-radius: 5px;
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .widget-infoButton {
@@ -429,12 +464,17 @@ ul.widget-shortInfo li:last-child{
 @media (max-width: 1100px) {
   .header-background {
     object-position: right 0 bottom 0;
+    
   }
 }
 
 @media (max-width: 850px) {
   .widget-grid{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .body-content {
+    background: #fff9f0;
   }
 
   .headerSection {

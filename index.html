@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Festival</title>
+    <title>Rajaton Taide -festivaali</title>
     <link rel="stylesheet" href="style.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap');
@@ -16,7 +16,7 @@
       <nav>
         <div class="burger-menu">
           <div class="burger">
-            <img src="images/menu.png" id="burger-logo">
+            <img src="icons/menu.png" id="burger-logo">
           </div>
         </div>
         <ul id="nav-links">
@@ -29,19 +29,20 @@
       <div class="header-info">
         <img class="logo" src="images/RT LOGO circular.png" alt="logo" >
         
-        <h1 class="centerText stroked-text"> 26.8. - 10.9.</h1>
-        <h1 id="slogan">Koe elämys. <br> Elä kokemus.</h1>
+        <h1 class="header-date text-stroke-outside"> 26.8. - 10.9.</h1>
+        <h1 id="slogan" class="text-stroke-outside">Koe elämys. <br> Elä kokemus.</h1>
+        <div class="scroll-icon-container" id="scroll-button">
+          <img class="header-scroll-icon" src="icons/down.png">
+        </div>
+        
       </div>
 
-      <div class="header-right">
-        <div class="header-banner"> <h1 id="main-title">Musiikki- ja taide-elämyksiä Joensuussa</h1></div>
-      </div>
 
       
     </header>
     
 
-    <div class="bodycontent">
+    <div class="body-content" id="body-content">
 
       <!-- MODAL -->
       <div id="infoModal" class="modal">
@@ -68,11 +69,10 @@
       <!-- MODAL -->
 
       <h1 class="body-heading">Ohjelma 2023</h1>
-      
       <div class="widget-grid">
         <!-- RAJATON KOHTAAMINEN -->
         <div class="widget">
-          <div class="widget-left green">
+          <div class="widget-left">
             <h2 class="widget-title">Rajaton kohtaaminen</h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">2.9. | 19:00</h3></li>
@@ -81,15 +81,15 @@
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="rajaton"><img class="viewIcon" src="images/focus.png"></button>
+              <button href="#" class="widget-infoButton" eventID="rajaton"><img class="viewIcon" src="icons/focus.png"></button>
             </div>
           </div>
-          <div class="widget-right"></div>
+          <div class="widget-right" style="background-image: url(images/ClefPainted.jpg);"></div>
         </div>
         <!-- RAKKAAT YSTÄVÄT -->
         <div class="widget">
           <div class="widget-left">
-            <h2 class="widget-title">Olkaa hyvät, rakkaat ystävät</h2>
+            <h2 class="widget-title">Olkaa hyvät,<br>rakkaat ystävät</h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">3.9. | 15:00</h3></li>
               <li><h3 class="widget-description">Joensuun konservatorio</h3></li>
@@ -97,14 +97,14 @@
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="ystavat"><img class="viewIcon" src="images/focus.png"></button>
+              <button href="#" class="widget-infoButton" eventID="ystavat"><img class="viewIcon" src="icons/focus.png"></button>
             </div>
           </div>
-          <div class="widget-right"></div>
+          <div class="widget-right" style="background-image: url(images/silhouettesOfmusicians.jpg);"></div>
         </div>
         <!-- KARJALAISTA JA KANSAINVÄLISTÄ -->
         <div class="widget">
-          <div class="widget-left yellowish">
+          <div class="widget-left">
             <h2 class="widget-title">Karjalaista ja kansainvälistä</h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">2.9. | 19:00</h3></li>
@@ -113,14 +113,14 @@
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="karjalaista"><img class="viewIcon" src="images/focus.png"></button>
+              <button href="#" class="widget-infoButton" eventID="karjalaista"><img class="viewIcon" src="icons/focus.png"></button>
             </div>
           </div>
           <div class="widget-right"></div>
         </div>
         <!-- ELECTRONIC IN THE TROPICS -->
         <div class="widget">
-          <div class="widget-left orange">
+          <div class="widget-left">
             <h2 class="widget-title">Electronic in the tropics</h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">2.9. | 19:00</h3></li>
@@ -129,14 +129,14 @@
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="images/focus.png"></button>
+              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="icons/focus.png"></button>
             </div>
           </div>
-          <div class="widget-right"></div>
+          <div class="widget-right" style="background-image: url(images/electronicInTheTropics.jpg);"></div>
         </div>
         <!-- Lasten Musiikkiviidakko -->
         <div class="widget">
-          <div class="widget-left teal">
+          <div class="widget-left">
             <h2 class="widget-title">Lasten Musiikkiviidakko</h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">27.8. | 11:00-15:00</h3></li>
@@ -145,7 +145,7 @@
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="images/focus.png"></button>
+              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="icons/focus.png"></button>
             </div>
           </div>
           <div class="widget-right"></div>
@@ -161,7 +161,7 @@
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="images/focus.png"></button>
+              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="icons/focus.png"></button>
             </div>
           </div>
           <div class="widget-right"></div>
