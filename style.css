@@ -25,6 +25,7 @@ Orange= #FF6933
   border-top: solid 1px lightgrey;
   width: 90%;
   margin-bottom: 20px;
+
 }
 
 
@@ -118,6 +119,52 @@ nav {
   padding: 20px;
 }
 
+/* Footer */
+
+footer {
+  background-color: var(--background-main);
+  padding: 20px;
+  background-blend-mode: overlay;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+  font-family: 'Merriweather', serif;
+}
+
+/* footer end */
+
 body {
   background-color: none;
   background-size: cover;
@@ -133,6 +180,8 @@ body {
 .text-photo-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .subpage-body-content{
@@ -143,6 +192,35 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+
+
+.photo-part {
+  flex: 1;
+  min-height: 100%;
+  
+}
+
+.text-part {
+  width: 50%;
+}
+
+.photo-part figure {
+  flex: 1;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-part img {
+
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px
+  
 }
 
 .subpage-text-container {
@@ -573,8 +651,16 @@ ul.widget-shortInfo li:last-child{
 @media (max-width: 1100px) {
   .header-background {
     object-position: right 0 bottom 0;
-    
   }
+
+  .text-photo-container{
+    flex-direction: column;
+  }
+
+  .text-part {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 850px) {
@@ -600,10 +686,7 @@ ul.widget-shortInfo li:last-child{
     font-size: 16px;
   }
 
-  .text-photo-container{
-    flex-direction: column;
-  }
-
+  
   .body-content {
     background: #fff9f0;
   }
