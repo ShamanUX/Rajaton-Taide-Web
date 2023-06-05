@@ -347,6 +347,10 @@ body {
   src: url("fonts/LegaultStd.otf");
 }
 
+ol li {
+  font-family: 'Merriweather', serif;
+}
+
 h1 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
@@ -446,6 +450,7 @@ figcaption {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
   font-size: 30px;
+  pointer-events: none;
 }
 
 .viewIcon {
@@ -521,6 +526,7 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 30%;
 
 }
 
