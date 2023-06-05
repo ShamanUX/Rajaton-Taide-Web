@@ -52,7 +52,6 @@ nav {
   background-color: #be520aa7;
 }
 
-
 .subpage-header{
   background-image: url('images/Violin\ by\ the\ river.png');
   background-size: cover;
@@ -62,15 +61,15 @@ nav {
   flex-direction: column;
   min-width: 100%;
 }
+
 .subpage-title-container {
   background-color: #be520aa7;
   height: 8em;
   background-size: auto;
-  width: 100%
+  width: 100%;
 }
 
 .headerSection {
-  
   min-height: 100vh;
   display: block;
   background-color: #b46a16;
@@ -123,13 +122,12 @@ nav {
 
 footer {
   background-color: var(--background-main);
-  padding: 20px;
   background-blend-mode: overlay;
-  margin-top: 20px;
-  padding-bottom: 40px;
+  padding: 20px;
   text-align: center;
-  position: relative;
   width: 100%;
+  position: relative;
+  bottom: 0;
 }
 
 .footer-content {
@@ -169,6 +167,9 @@ body {
   background-color: none;
   background-size: cover;
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .body-content{
@@ -186,14 +187,15 @@ body {
 
 .subpage-body-content{
   background-color: var(--background-main);
-  height: 100%;
-  min-height: 100vh;
-
-  position: relative;
+  min-height: 100% !important;
+  position:relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  
 }
-
 
 .photo-part {
   flex: 1;
@@ -215,12 +217,10 @@ body {
 }
 
 .photo-part img {
-
   max-width: 100%;
   max-height: 100%;
   border-radius: 10px;
-  margin-bottom: 10px
-  
+  margin-bottom: 10px;
 }
 
 .subpage-text-container {
@@ -229,10 +229,11 @@ body {
   flex-direction: column;
   align-items: left;
   justify-content: top;
-  height: 100%;
+  min-height: 100%;
   width: 40%;
   margin: 0 auto;
   padding-top: 40px;
+  flex-grow: 1;
 }
 
 .subpage-bg-left,
@@ -253,7 +254,6 @@ body {
   linear-gradient(to right, rgba(255, 255, 255, 0), #fff9f0a1);
   background-blend-mode: overlay;
   background-position: left center;
- 
 }
 
 .subpage-bg-right{
@@ -262,8 +262,29 @@ body {
   linear-gradient(to left, rgba(255, 255, 255, 0), #fff9f0a1);
   background-position: right center;
   background-blend-mode: overlay;
-  
 }
+
+/* IMAGE GRID */
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  row-gap: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.image-grid img {
+  flex: 0 0 calc(33.33% - 40px);
+  max-width: calc(33.33% - 40px);
+  height: auto;
+}
+
+/* IMAGE GRID END */
 
 .logo {
   display: block;
@@ -271,7 +292,6 @@ body {
   width: 10%;
   margin: 0 auto;
 }
-
 
 .video-container {
   position: relative;
@@ -405,8 +425,6 @@ figcaption {
 
 /* icons end */
 
-
-
 #nav-links {
   list-style: none;
   padding: 0;
@@ -427,9 +445,8 @@ nav a {
   font-weight: 700;
 }
 
-  
 
-/*MODAL START*/
+/* MODAL */
 
 .modal {
   display: none; /* Hidden by default */
@@ -444,7 +461,6 @@ nav a {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-
 /* Modal Content/Box */
 .modalContent-inner {
   display: flex;
@@ -452,7 +468,6 @@ nav a {
   position: relative;
   width: 90%;
 }
-
 
 .modalContent {
   position: relative;
@@ -468,7 +483,6 @@ nav a {
   align-items: center;
 }
 
-
 .modal-left {
   min-width: 50%;
 }
@@ -480,7 +494,6 @@ nav a {
   align-items: center;
 
 }
-
 
 #eventTitle {
   padding-top: 0px;
@@ -640,7 +653,6 @@ ul.widget-shortInfo li:last-child{
   background-color: #818181 !important; 
 }
 
-
 .viewIcon {
   width: 24px;
   filter: brightness(0) invert(1);
@@ -716,6 +728,11 @@ ul.widget-shortInfo li:last-child{
     width: auto;
   }
 
+  .image-grid img {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+
 }
 
 
@@ -730,6 +747,11 @@ ul.widget-shortInfo li:last-child{
 
   .modal-right{
     padding-top: 20px;
+  }
+
+  .image-grid img {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
 }
