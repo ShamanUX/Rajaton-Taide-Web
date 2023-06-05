@@ -10,15 +10,17 @@ var eventTitle = document.getElementById("eventTitle");
 var eventDate = document.getElementById("eventDate");
 var eventClock = document.getElementById("eventClock");
 var eventPrice = document.getElementById("eventPrice");
-var eventDescription = document.getElementById("eventDescription");
+var eventDescriptionContainer = document.getElementById("eventDescriptionContainer");
 var eventImage = document.getElementById("eventImage");
-
-
 
 function openModal(eventID) {
   var event = eventData[eventID]
   eventTitle.textContent = event.title;
-  eventDescription.textContent = event.description;
+  if (event.customDescription != "") {
+    getCustomHTML("Rajaton.html", eventDescriptionContainer);
+  } else {
+    eventDescriptionContainer.innerHTML = "<p>"+event.description+"</p>";
+  }
   eventClock.textContent = event.clock;
   eventPrice.textContent = event.price;
   eventDate.textContent = event.date;
@@ -26,6 +28,18 @@ function openModal(eventID) {
   
   modal.style.display = "block";
 }
+
+function getCustomHTML(file, targetElement) {
+  fetch(file) 
+    .then(response => response.text()) // Extract the file contents as text
+    .then(htmlContent => {
+      targetElement.innerHTML = htmlContent; // Set the HTML content to the target element
+    })
+    .catch(error => {
+      console.error('Error in fetching html:', error);
+    });
+  }
+
 
 span.onclick = function() {
     modal.style.display = "none";
@@ -74,7 +88,7 @@ document.addEventListener("keydown", function(event) {
 var eventData = {
     "rajaton": {
       "title": "Rajaton kohtaaminen",
-      "customDescription": "none",
+      "customDescription": "Rajaton.html",
       "description": "Kassun sinfonia ja Onni Muikun lauluja. Ohjelmassa väliaika.",
       "clock": "18:00",
       "date": "2.9.",
