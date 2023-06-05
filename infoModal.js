@@ -1,6 +1,6 @@
 var modal = document.getElementById("infoModal");
 
-var buttons = document.getElementsByClassName("widget-infoButton");
+var buttons = document.getElementsByClassName("info-icon");
 
 var span = document.getElementsByClassName("close")[0];
 
@@ -74,6 +74,7 @@ document.addEventListener("keydown", function(event) {
 var eventData = {
     "rajaton": {
       "title": "Rajaton kohtaaminen",
+      "customDescription": "none",
       "description": "Kassun sinfonia ja Onni Muikun lauluja. Ohjelmassa väliaika.",
       "clock": "18:00",
       "date": "2.9.",

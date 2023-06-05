@@ -19,17 +19,17 @@
           </div>
         </div>
         <ul id="nav-links">
-          <li><a href="">Ohjelma</a></li>
+          <li><a id="ohjelma-link" style="cursor: pointer;">Ohjelma</a></li>
           <li><a href="info.html">Meistä</a></li>
           <li><a href="kumppanit.html">Kumppanit</a></li>
-          <li><a href="#">Liput</a></li>
+          <li><a href="liput.html">Liput</a></li>
         </ul>
       </nav>
       <div class="header-info">
         <img class="logo" src="images/RT LOGO circular.png" alt="logo" >
         
-        <h1 class="header-date text-stroke-outside"> 26.8. - 10.9.</h1>
-        <h1 id="slogan" class="text-stroke-outside">Koe elämys. <br> Elä kokemus.</h1>
+        <h1 class="header-date text-stroke-outside"> 26.8. - 3.9.</h1>
+        <img id="slogan" src="fonts/rajaton taide slogan.png">
         <div class="scroll-icon-container" id="scroll-button">
           <img class="header-scroll-icon" src="icons/down.png">
         </div>
@@ -40,10 +40,8 @@
     <div class="body-content" id="body-content">
 
       <!-- MODAL -->
-      <div id="infoModal" class="modal">
-          
+      <div id="infoModal" class="modal">     
           <div class="modalContent">
-  
             <span class="close">&times;</span>
             <h2 id="eventTitle">Eventin nimi</h2>
             <div class="solid-divider"></div>
@@ -52,7 +50,10 @@
                 <h3 id="eventDate">16.6.</h3>
                 <h3 id="eventClock">16:00</h3>
                 <h3 id="eventPrice">15/10 €</h3>
-                <p id="eventDescription">Liirum laarum</p>
+                <div id="eventDescriptionContainer">
+                  <p id="eventDescription">Liirum laarum</p>
+                </div>
+                
               </div>
               <div class="modal-right">
                 <img id="eventImage" src="images/Cranberrythumbnail.png">
@@ -76,10 +77,12 @@
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="rajaton"><img class="viewIcon" src="icons/focus.png"></button>
+              <button eventID="rajaton" class="info-icon">
+                <span class="info-icon-text" > i </span> 
+              </button>
             </div>
           </div>
-          <div class="widget-right" style="background-image: url(images/ClefPainted.jpg);"></div>
+          <div class="widget-right" style="background-image: url(images/ViuluKevätTaivas.png); background-position: left"></div>
         </div>
         <!-- RAKKAAT YSTÄVÄT -->
         <div class="widget">
@@ -88,14 +91,16 @@
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">3.9. | 15:00</h3></li>
               <li><h3 class="widget-description">Joensuun konservatorio</h3></li>
-              <li><h3 class="widget-description">25 / 22 €</h3></li>
+              <li><h3 class="widget-description">20 / 17 €</h3></li>
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="ystavat"><img class="viewIcon" src="icons/focus.png"></button>
+              <button eventID="ystavat" class="info-icon">
+                <span class="info-icon-text" > i </span> 
+              </button>
             </div>
           </div>
-          <div class="widget-right" style="background-image: url(images/silhouettesOfmusicians.jpg);"></div>
+          <div class="widget-right" style="background-image: url(images/jack-in-the-flygel.jpg);"></div>
         </div>
         <!-- KARJALAISTA JA KANSAINVÄLISTÄ -->
         <div class="widget">
@@ -108,23 +113,27 @@
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="karjalaista"><img class="viewIcon" src="icons/focus.png"></button>
+              <button eventID="karjalaista" class="info-icon">
+                <span class="info-icon-text" > i </span> 
+              </button>
             </div>
           </div>
-          <div class="widget-right"></div>
+          <div class="widget-right" style="background-image: url(images/karjalaistajakansainvalista.png); background-position: right;"></div>
         </div>
         <!-- ELECTRONIC IN THE TROPICS -->
         <div class="widget">
           <div class="widget-left">
-            <h2 class="widget-title">Electronic in the tropics</h2>
+            <h2 class="widget-title">ElectroJungle</h2>
             <ul class="widget-shortInfo">
-              <li><h3 class="widget-description">2.9. | 19:00</h3></li>
+              <li><h3 class="widget-description">26.8. | 19:00</h3></li>
               <li><h3 class="widget-description">Botania</h3></li>
               <li><h3 class="widget-description">9 €</h3></li>
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="icons/focus.png"></button>
+              <button eventID="electro" class="info-icon">
+                <span class="info-icon-text" > i </span> 
+              </button>
             </div>
           </div>
           <div class="widget-right" style="background-image: url(images/electronicInTheTropics.jpg);"></div>
@@ -140,15 +149,17 @@
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="icons/focus.png"></button>
+              <button eventID="lasten" class="info-icon">
+                <span class="info-icon-text" > i </span> 
+              </button>
             </div>
           </div>
-          <div class="widget-right"></div>
+          <div class="widget-right" style="background-image: url(images/LastenMusiikkiviidakko.png);"></div>
         </div>
         <!-- ELECTRONIC IN THE TROPICS -->
         <div class="widget">
           <div class="widget-left">
-            <h2 class="widget-title">Mestarikurssit</h2>
+            <h2 class="widget-title">Mestarikurssien päätöskonsertti</h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">?.?. | ??:??</h3></li>
               <li><h3 class="widget-description">Konservatorio?</h3></li>
@@ -156,23 +167,25 @@
             </ul>
             <div class="widget-buttonRow">
               <a href="#" class="widget-button">LIPUT &gt;</a>
-              <button href="#" class="widget-infoButton" eventID="electro"><img class="viewIcon" src="icons/focus.png"></button>
+              <button eventID="mestari" class="info-icon">
+                <span class="info-icon-text" > i </span> 
+              </button>
             </div>
           </div>
-          <div class="widget-right"></div>
+          <div class="widget-right" style="background-image: url(images/masterclass\ illustration.jpg);"></div>
         </div>
       </div>
-      </div>
+    </div>
       
       <footer>
         <div class="footer-content">
           <div class="solid-divider" style="width: 100%;"></div>
           <p>Rajaton Taide</p>
           <ul class="footer-links">
-            <li><a href="#">Ohjelma</a></li>
-            <li><a href="#">Meistä</a></li>
-            <li><a href="#">Kumppanit</a></li>
-            <li><a href="#">Liput</a></li>
+            <li><a href="/">Ohjelma</a></li>
+            <li><a href="info.html">Meistä</a></li>
+            <li><a href="kumppanit.html">Kumppanit</a></li>
+            <li><a href="liput.html">Liput</a></li>
           </ul>
           <p style="color: #555"> Kemal Achourbekov |  ​050 5742753  |  kemal.achourbekov@konsa.joensuu.fi </p>
         </div>
