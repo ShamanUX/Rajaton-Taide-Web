@@ -115,7 +115,39 @@ var eventData = {
     },
     "karjalaista": {
       "title": "Karjalaista ja kansainvälistä",
-      "customDescription": "",
+      "customDescription": `
+      <div class="text-photo-container">
+            <div class="text-part">
+                <p><strong>Osa yksi: Huojuva lato</strong></p>
+                <p>Huojuva Lato on vuonna 2008 perustettu pohjoiskarjalainen bändi, jonka musiikki ammentaa vaikutteita countrysta ja folkista. Heidän juureva soundinsa ja voimakkaat laulut ovat keränneet suosiota ympäri Suomea. Kokoonpanon vahva esiintymisote ja taidokas soitto takaavat unohtumattoman musiikkielämyksen, jossa yhdistyvät nostalgiset sävyt ja moderni twisti.
+                <br><br>Bändin ydinjäsenet Suonna Kononen, Ilkka Vartiainen, Teemu Sinkko ja Keijo Korhonen luovat yhdessä ainutlaatuisen kokonaisuuden, jossa akustiset ja sähkökitarat, pedal steel, basso ja rummut pääsevät loistamaan.
+                <br><br>Huojuva Lato on saavuttanut menestystä omilla julkaisuillaan, kuten esikoispitkäsoittonsa "Lähde länteen!" ja toinen albuminsa "Rakkaus ja juuret". Heidän musiikkinsa on soinut radiossa ja televisiossa, ja heitä pidetään suomalaisen countrymusiikin kärkiniminä – eikä vauhti hidastu.
+                </p>
+            </div>
+            <div class="photo-part">
+              <figure>
+                <img src="images/huojuvalato.jpg" alt="Huojuva Lato">
+                <figcaption> Huojuva Lato </figcaption>
+              </figure>
+            </div>
+        </div>
+        <hr/>
+
+        <div class="text-photo-container">
+            <div class="text-part">
+                <p><strong>Osa kaksi: Taiga-kvartetti</strong></p>
+                   <p> Rajaton Taide -festivaalilla edellisvuonnakin autuutta herättänyt Taiga-kvartetti syntyi keväällä 2019, kun muusikot Huba Hollókői, Sakari Tervo, Hans Lodders ja Ville Kivivuori jakoivat yhteisen halun soittaa kvartettimusiikkia. Kvartetin ensimmäinen esiintyminen oli toukokuussa 2019. Yhtye on edeltävän kahden vuoden aikana järjestänyt Beethoven+ -konserttisarjan, jossa kantavana ohjelmistona ovat olleet Beethovenin jousikvartetot, joiden pariksi on valittu sopivia teoksia muilta säveltäjiltä.
+                    <br><br>Omien konserttiensa lisäksi Taiga-kvartetti on esiintynyt Joensuun musiikkijuhlien jouluisessa videokonsertissa, tehnyt studiolivetaltioinnin yhteistyössä Riverian kanssa, kantaesittänyt Huba Hollókőin Corona-kvarteton Op. 1 sekä soittanut jousiosuudet keväällä 2021 julkaistulle nuorten sävellyskilpailun voittajateoksista kootulle Biisinikkari – levylle. Yhtye oli myös ehdolla sanomalehti Karjalaisen vuoden kulttuuriteko – palkinnon saajaksi vuonna 2020.
+                </p>
+            </div>
+            <div class="photo-part">
+                <figure>
+                    <img src="images/taigakvartettiwide.png" alt="Taiga-kvartetti">
+                    <figcaption> Taiga-kvartetti </figcaption>
+                </figure>
+            </div>
+        </div>
+      `,
       "description": "Taiga-kvartetti ja Huojuva lato",
       "clock": "19:00",
       "date": "1.9.",
@@ -146,7 +178,7 @@ var eventData = {
     "mestari": {
       "title": "Lasten Botania",
       "customDescription": "",
-      "description": "Sellon ja viulun Mestarikurssi huipentuu!",
+      "description": "Sellon ja sähkökitaran Mestarikurssit huipentuvat!",
       "clock": "18",
       "date": "31.8.",
       "price": "Maksuton",
@@ -154,24 +186,3 @@ var eventData = {
       "image": "images/masterclass\ illustration.jpg"
     }
   }
-
-
-  const rajatonHTML = `
-  <p><strong>Osa yksi: Sinfonia nr 1 Northern lights (Revontulet)</strong></p>
-  <p>S&auml;velt&auml;j&auml; Kassu Halosen vuonna 2019 valmistunut sinfonia "Northern lights" on vaikuttava sinfoniateos, jonka alaotsikko kuuluu "Revontulet - taivaallinen valon&auml;ytelm&auml;". Sinfonia koostuu kolmesta osasta, ja s&auml;vellaji vaihtelee.</p>
-  <p>Kassu Halonen ty&ouml;sti ensimm&auml;ist&auml; sinfoniaansa yli 20 vuoden ajan, ja lopputuloksena oli noin kolmekymment&auml; minuuttia kest&auml;v&auml; mahtipontinen teos, joka kunnioittaa revontulia.</p>
-  <p>Ensimm&auml;inen osa v&auml;litt&auml;&auml; luonnon koskemattoman rauhan ja harmonian tunnelman. Toisessa osassa esiin nousee upea taivaallinen tulileikki, kun revontulet leiskuvat koko komeudessaan. Sinfonian seesteinen ja juhlava finaali viimeistelee kokonaisuuden.</p>
-  <p>Kuten Aleksis Kiven "Seitsem&auml;n veljest&auml;" -teoksessa kerrotaan, Jukolan veljekset tarkkailivat useana talviy&ouml;n&auml; Impivaaran ikkunasta "kelmeitten revontulten v&auml;lkkyn&auml;t&auml; pohjosessa". He n&auml;kiv&auml;t, miten revontulet kajastivat kauas vuorenharjulta, partaisten kuusten takaa. Valo v&auml;lkkyi ja &auml;&auml;net&ouml;n soitto syttyi ja sammui taivaalla, luoden himme&auml;n valon. T&auml;t&auml; lumoavaa n&auml;ytelm&auml;&auml; my&ouml;s Kassu seurasi lapsuudessaan Ouluj&auml;rven rannalla, ihmetellen ilmi&ouml;n alkuper&auml;&auml; ja syyt&auml;. Sinfonia on omistettu t&auml;lle juhlalliselle ilmi&ouml;lle.</p>
-  <hr />
-  <p><strong>Osa kaksi: Onni Muikun teoksia</strong></p>
-  <p>Karjalan kev&auml;&auml;n nimell&auml; kulkevassa kokonaisuudessa esitet&auml;&auml;n Onni Muikun teoksia, ja t&auml;ss&auml; osassa ei ole laulajaa tai sooloartistia.</p>
-  <p>Kokonaisuus koostuu seuraavista osista:</p>
-  <ol>
-  <li><em>Kev&auml;tt&auml; kohti</em>: Teoksen alussa tunnelmoidaan kev&auml;&auml;n odotusta ja kasvavaa toivoa.</li>
-  <li><em>Tuoksujen tulvaa</em>: T&auml;ss&auml; osassa korostuvat kev&auml;&auml;n tuoksujen rikkaus ja luonnon her&auml;&auml;minen.</li>
-  <li><em>Lintujen liverryst&auml;</em>: Musiikki kuvastaa lintujen iloista laulua ja niiden vilkasta aktiviteettia kev&auml;isess&auml; maisemassa.</li>
-  <li><em>Tanssiaiset</em>: T&auml;m&auml; osa on omistettu kev&auml;&auml;n juhlille ja tanssin riemulle.</li>
-  <li><em>Kes&auml;n tullen</em>: Musiikissa siirryt&auml;&auml;n kev&auml;&auml;n ja kes&auml;n rajapintaan, kun luonto kukoistaa t&auml;ydess&auml; voimassaan.</li>
-  <li><em>Iltarusko</em>: Kokonaisuuden p&auml;&auml;tteeksi tunnelmoidaan kes&auml;illan rauhallista iltaruskoa.</li>
-  </ol>
-`
