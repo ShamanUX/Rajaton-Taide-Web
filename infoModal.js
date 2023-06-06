@@ -12,6 +12,7 @@ var eventClock = document.getElementById("eventClock");
 var eventPrice = document.getElementById("eventPrice");
 var eventDescriptionContainer = document.getElementById("eventDescriptionContainer");
 var eventImage = document.getElementById("eventImage");
+var modalImageContainer = document.getElementById("modal-image-container");
 
 function openModal(eventID) {
   var event = eventData[eventID]
@@ -24,7 +25,13 @@ function openModal(eventID) {
   eventClock.textContent = event.clock;
   eventPrice.textContent = event.price;
   eventDate.textContent = event.date;
-  eventImage.src = event.image;
+  if (event.image === "") {
+    modalImageContainer.style.display = "none";
+  } else {
+    modalImageContainer.style.display = "inline";
+    eventImage.src = event.image;
+  }
+  
   modal.style.display = "block";
 }
 
@@ -98,7 +105,7 @@ var eventData = {
       `,
       "description": "Kassun sinfonia ja Onni Muikun lauluja. Ohjelmassa väliaika.",
       "clock": "18:00",
-      "date": "2.9.",
+      "date": "Lauantai 2.9.",
       "price": "25 / 22 €",
       "venue": "Carelia-sali",
       "image": "images/ViuluKevätTaivas.png" 
@@ -106,9 +113,9 @@ var eventData = {
     "ystavat": {
       "title": "Olkaa hyvät, rakkaat ystävät",
       "customDescription": "",
-      "description": "Solistit: Juliana Vehviläinen, Juha Eskelinen, Aleksi Suikkanen, Timo Turunto, Heikki Kotilainen.",
+      "description": "Tässä tapahtumassa festivaalin taiteellinen johtaja, pianisti Kemal Achourbekov, yhdessä vankan joukon taitavia esiintyjiä, säestää maagisine sormineen esityksen, joka on täynnä mieltä mullistavia yllätyksiä ja hämmästyttäviä käänteitä. <br> <br> Rakkaille ystäville, kanssa rakkaiden ystävien!",
       "clock": "15:00",
-      "date": "3.9.",
+      "date": "Sunnuntai 3.9.",
       "price": "20 / 17 €",
       "venue": "Konservatorion sali",
       "image": "images/jack-in-the-flygel.jpg"
@@ -150,17 +157,19 @@ var eventData = {
       `,
       "description": "Taiga-kvartetti ja Huojuva lato",
       "clock": "19:00",
-      "date": "1.9.",
+      "date": "Perjantai 1.9.",
       "price": "15 €",
       "venue": "Konservatorion sali",
-      "image": "images/karjalaistajakansainvalista.png"
+      "image": ""
     },
     "electro": {
       "title": "ElectroJungle",
       "customDescription": "",
-      "description": "Electronic music (tech house, psytrance, dnb) in the Botania gardens",
+      "description": `Botanian trooppisessa puutarhassa järjestettävä elektroniselle musiikille pyhitetty tapahtuma tulee jälleen! Nauti rytmeistä ja idyylisestä maisemista viidakon ympäröimänä. Genre ja BPM muuttuvat illan edetessä – kuulet ainakin soivan house, tekno, psytrance ja drum & bass kappaleita. Paikan päällä anniskelu ja snack bar.
+      <br><br>The Botania electronic music event is happening again! The lush tropics and breathtaking Sundön combined with energizing music is truly an empowering experience. Genre and BPM will evolve during the event, and you will hear tracks of house, techno, psytrance and drum & bass. There is a snack bar on-site and alcoholic beverages are served.
+      `,
       "clock": "20 - 24",
-      "date": "26.8.",
+      "date": "Lauantai 26.8.",
       "price": "9 €",
       "venue": "Botania",
       "image": "images/electronicInTheTropics.jpg"
@@ -170,19 +179,57 @@ var eventData = {
       "customDescription": "",
       "description": "Lapsille kivoja musiikillisia askareita Botanian trooppisissa tiloissa!",
       "clock": "11-15",
-      "date": "27.8.",
+      "date": "Sunnuntai 27.8.",
       "price": "Maksuton",
       "venue": "Botania",
       "image": "images/LastenMusiikkiviidakko.png"
     },
     "mestari": {
-      "title": "Lasten Botania",
-      "customDescription": "",
+      "title": "Mestarikurssien päätöskonsertti",
+      "customDescription": `
+      <p> Mestarikurssit huipentuvat jälleen yhteiskonserttiin Joensuun konservatoriolla! </p>
+
+<p> Opiskelijoille ilmoittautuminen ja lisätiedot: Kemal Achourbekov, kemal.achourbekov@konsa.joensuu.fi</p>
+
+<div class="text-photo-container">
+    
+    <div class="text-part">
+        <p><strong>Sähkökitara - Mikko Tirronen</strong></p>
+        
+        <p>Pitkän linjan pop & jazz -kitaristi Mikko Tirronen on saattanut lukuisia muusikoita
+            syvemmälle musiikin maailmaan Joensuun Konservatoriolla, ja on toiminut Jyväskylän Ammattikorkeakoulussa opetusharjoittelun ohjaajana.
+            <br> <br> Hän tiivistää monigenreisen ja elämänmittaisen tietämyksensä kitaran mestarikurssiin elokuussa.   
+        </p>
+    </div>
+    <div class="photo-part">
+        <figure>
+            <img src="images/mikkotirronen.jpg" alt="Mikko Tirronen">
+            <figcaption> Mikko Tirronen </figcaption>
+        </figure>
+    </div>
+</div>
+<hr/>
+
+<div class="text-photo-container">
+    
+    <div class="text-part">
+        <p><strong>Sello - Nuria Rosa Muntañola</strong></p>
+        <p>Madridilainen Nuria Rosa Muntañola on toiminut yli 20 vuotta sellon professorina. Hän on soittanut mm. Lontoon Filharmonisessa Orkesterissa ja Lambeth Orkesterissa, sekä Saksan Essenin Orkesterissa.</p>
+        <p>Lukuisiin mestarikursseihin myös itse opiskeluvuosinaan osallistunut Muntañola tarjoaa nyt ainutlaatuisen mahdollisuuden syventyä sellon saloihin Rajaton Taide -mestarikurssissa.</p>
+    </div>
+    <div class="photo-part">
+        <figure>
+            <img src="images/profmuntanola.png" alt="Nuria Rosa Muntañola">
+            <figcaption>Prof. Nuria Rosa Muntañola </figcaption>
+        </figure>
+    </div>
+</div>
+      `,
       "description": "Sellon ja sähkökitaran Mestarikurssit huipentuvat!",
-      "clock": "18",
-      "date": "31.8.",
+      "clock": "18:00",
+      "date": "Torstai 31.8.",
       "price": "Maksuton",
       "venue": "Konservatorio",
-      "image": "images/masterclass\ illustration.jpg"
+      "image": ""
     }
   }

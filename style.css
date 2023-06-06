@@ -202,7 +202,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: top;
 }
 
 .subpage-body-content{
@@ -220,7 +220,7 @@ body {
 .photo-part {
   flex: 1;
   min-height: 100%;
-  
+  max-width: 30%;
 }
 
 .text-part {
@@ -444,7 +444,6 @@ figcaption {
   text-align: center;
   border: none;
   cursor: pointer;
-  display: none;
 }
 
 .info-icon-text {
@@ -548,10 +547,10 @@ nav a {
 /* The Close Button */
 .close {
   color: #aaa;
-  font-size: 28px;
+  font-size: 60px;
   font-weight: bold;
   position: absolute;
-  right: 5px;
+  right: 15px;
   top: 0;
 }
 
@@ -618,7 +617,6 @@ nav a {
   font-weight: bold;
   margin-bottom: 10px;
   min-height: 3em;
-  overflow-wrap: break-word;
 }
 
 /* color classes for widget */
@@ -707,6 +705,9 @@ ul.widget-shortInfo li:last-child{
     flex-direction: column;
   }
 
+  .photo-part {
+    min-width: 100%;
+  }
   .text-part {
     width: 100%;
   }
