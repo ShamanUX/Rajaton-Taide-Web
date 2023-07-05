@@ -10,6 +10,7 @@ var eventTitle = document.getElementById("eventTitle");
 var eventDate = document.getElementById("eventDate");
 var eventClock = document.getElementById("eventClock");
 var eventPrice = document.getElementById("eventPrice");
+var eventVenue = document.getElementById("eventVenue");
 var eventDescriptionContainer = document.getElementById("eventDescriptionContainer");
 var eventImage = document.getElementById("eventImage");
 var modalImageContainer = document.getElementById("modal-image-container");
@@ -25,6 +26,7 @@ function openModal(eventID) {
   eventClock.textContent = event.clock;
   eventPrice.textContent = event.price;
   eventDate.textContent = event.date;
+  eventVenue.textContent = event.venue;
   if (event.image === "") {
     modalImageContainer.style.display = "none";
   } else {
@@ -85,6 +87,7 @@ var eventData = {
       "title": "Rajaton kohtaaminen",
       "customDescription": 
       `
+        <p>Tässä konsertissa Joensuun kaupunginorkersteri ja kapellimestari Huba Hollókői esittävät luonnon kauneutta kuvaavia teoksia. </p>
         <p><strong>Osa yksi: Sinfonia nr 1 Northern lights (Revontulet)</strong></p>
         <p>S&auml;velt&auml;j&auml; Kassu Halosen vuonna 2019 valmistunut sinfonia "Northern lights" on vaikuttava sinfoniateos, jonka alaotsikko kuuluu "Revontulet - taivaallinen valon&auml;ytelm&auml;". Sinfonia koostuu kolmesta osasta, ja s&auml;vellaji vaihtelee.</p>
         <p>Kassu Halonen ty&ouml;sti ensimm&auml;ist&auml; sinfoniaansa yli 20 vuoden ajan, ja lopputuloksena oli noin kolmekymment&auml; minuuttia kest&auml;v&auml; mahtipontinen teos, joka kunnioittaa revontulia.</p>
@@ -92,7 +95,7 @@ var eventData = {
         <p>Kuten Aleksis Kiven "Seitsem&auml;n veljest&auml;" -teoksessa kerrotaan, Jukolan veljekset tarkkailivat useana talviy&ouml;n&auml; Impivaaran ikkunasta "kelmeitten revontulten v&auml;lkkyn&auml;t&auml; pohjosessa". He n&auml;kiv&auml;t, miten revontulet kajastivat kauas vuorenharjulta, partaisten kuusten takaa. Valo v&auml;lkkyi ja &auml;&auml;net&ouml;n soitto syttyi ja sammui taivaalla, luoden himme&auml;n valon. T&auml;t&auml; lumoavaa n&auml;ytelm&auml;&auml; my&ouml;s Kassu seurasi lapsuudessaan Ouluj&auml;rven rannalla, ihmetellen ilmi&ouml;n alkuper&auml;&auml; ja syyt&auml;. Sinfonia on omistettu t&auml;lle juhlalliselle ilmi&ouml;lle.</p>
         <hr />
         <p><strong>Osa kaksi: Onni Muikun teoksia</strong></p>
-        <p>Karjalan kev&auml;&auml;n nimell&auml; kulkevassa kokonaisuudessa esitet&auml;&auml;n Onni Muikun teoksia, ja t&auml;ss&auml; osassa ei ole laulajaa tai sooloartistia.</p>
+        <p>Karjalan kev&auml;&auml;n nimell&auml; kulkevassa kokonaisuudessa esitet&auml;&auml;n Onni Muikun teoksia, jotka ovat saaneet inspiraationsa karjalan kauniista luonnosta.</p>
         <p>Kokonaisuus koostuu seuraavista osista:</p>
         <ol>
         <li><em>Kev&auml;tt&auml; kohti</em>: Teoksen alussa tunnelmoidaan kev&auml;&auml;n odotusta ja kasvavaa toivoa.</li>
@@ -149,7 +152,7 @@ var eventData = {
             </div>
             <div class="photo-part">
                 <figure>
-                    <img src="images/taigakvartettiwide.png" alt="Taiga-kvartetti">
+                    <img src="images/Taigakvartettiwide.png" alt="Taiga-kvartetti">
                     <figcaption> Taiga-kvartetti </figcaption>
                 </figure>
             </div>
@@ -219,7 +222,7 @@ var eventData = {
     </div>
     <div class="photo-part">
         <figure>
-            <img src="images/profmuntanola.png" alt="Nuria Rosa Muntañola">
+            <img src="images/ProfMuntanola.png" alt="Nuria Rosa Muntañola">
             <figcaption>Prof. Nuria Rosa Muntañola </figcaption>
         </figure>
     </div>
