@@ -183,7 +183,7 @@ var eventData = {
       "description": "Lapsille kivoja musiikillisia askareita Botanian trooppisissa tiloissa!",
       "clock": "11-15",
       "date": "Sunnuntai 27.8.",
-      "price": "Maksuton",
+      "price": "5€ / Perhelippu 20€ (6 henkeä)",
       "venue": "Botania",
       "image": "images/LastenMusiikkiviidakko.png"
     },
