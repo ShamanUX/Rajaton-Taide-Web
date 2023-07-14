@@ -577,6 +577,8 @@ nav a {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .widget {
@@ -590,6 +592,8 @@ nav a {
   overflow: hidden;
   color: #333;
 }
+
+
 
 /* Set up the left part of the widget */
 .widget-left {
@@ -607,12 +611,11 @@ nav a {
 /* Set up the right part of the widget */
 .widget-right {
   flex: 1;
+  height: 100%;
   min-height: 100%;
-  min-width: 50%;
-  background-image: url("images/Cranberrythumbnail.png");
+  min-width: 50% !important;
   background-size: cover;
   background-position: center;
-  margin-left: 20px;
 }
 
 /* Style the title, description, and button */
@@ -670,8 +673,7 @@ ul.widget-shortInfo li:last-child{
   color: #fff;
   background-color: #52287b;
   border-radius: 5px;
-  /*display: inline-flex;*/
-  display: none; /* Don't display ticket buttons until they're available*/
+  display: inline-flex;
   align-items: center;
   white-space: nowrap;
 }
