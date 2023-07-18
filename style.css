@@ -311,6 +311,24 @@ body {
 
 
 
+.image-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%
+}
+.image-flex figure img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.image-flex figure {
+  text-align: center;
+}
+
+
+
 .video-container {
   position: relative;
   width: 100%;
@@ -793,8 +811,16 @@ ul.widget-shortInfo li:last-child{
     flex-direction: column;
   }
 
+  .widget-button {
+    padding: 10px 5px;
+  }
+
+  .image-flex {
+    flex-direction: column;
+  }
+
   .modal-right{
-    padding-top: 20px;
+    display: none !important;
   }
 
   .image-grid a {
@@ -803,7 +829,11 @@ ul.widget-shortInfo li:last-child{
   }
 
   .widget-title {
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  .widget-description {
+    font-size: 16px;
   }
 
   .widget-right {
