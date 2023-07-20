@@ -744,6 +744,10 @@ ul.widget-shortInfo li:last-child{
 
 @media (max-width: 850px) {
   
+  .modalContent-inner {
+    flex-direction: column;
+  }
+
   .widget-grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -807,9 +811,7 @@ ul.widget-shortInfo li:last-child{
 
 @media (max-width: 480px) {
   
-  .modalContent-inner {
-    flex-direction: column;
-  }
+  
 
   .widget-button {
     padding: 10px 5px;

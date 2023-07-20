@@ -168,8 +168,8 @@ var eventData = {
     "electro": {
       "title": "ElectroJungle",
       "customDescription": "",
-      "description": `Botanian trooppisessa puutarhassa järjestettävä elektroniselle musiikille pyhitetty tapahtuma tulee jälleen! Nauti rytmeistä ja idyylisestä maisemista viidakon ympäröimänä. Genre ja BPM muuttuvat illan edetessä – kuulet ainakin soivan house, tekno, psytrance ja drum & bass kappaleita. Paikan päällä anniskelu ja snack bar.
-      <br><br>The Botania electronic music event is happening again! The lush tropics and breathtaking Sundön combined with energizing music is truly an empowering experience. Genre and BPM will evolve during the event, and you will hear tracks of house, techno, psytrance and drum & bass. There is a snack bar on-site and alcoholic beverages are served.
+      "description": `Botanian trooppisessa puutarhassa järjestettävä elektroniselle musiikille pyhitetty tapahtuma tulee jälleen! Nauti rytmeistä ja idyllisistä maisemista viidakon ympäröimänä. Genre ja BPM muuttuvat illan edetessä – kuulet ainakin soivan house, tekno, psytrance ja drum & bass kappaleita. Paikan päällä anniskelu ja snack bar.
+      <br><br>The Botania electronic music event is happening again! The lush tropics and breathtaking sundown combined with energizing music is truly an empowering experience. Genre and BPM will evolve during the event, and you will hear tracks of house, techno, psytrance and drum & bass. There is a snack bar on-site and alcoholic beverages are served.
       `,
       "clock": "20 - 24",
       "date": "Lauantai 26.8.",
