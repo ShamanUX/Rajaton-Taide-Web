@@ -11,17 +11,19 @@ var eventDate = document.getElementById("eventDate");
 var eventClock = document.getElementById("eventClock");
 var eventPrice = document.getElementById("eventPrice");
 var eventVenue = document.getElementById("eventVenue");
-var eventDescriptionContainer = document.getElementById("eventDescriptionContainer");
+var eventDescriptionContainer = document.getElementById(
+  "eventDescriptionContainer"
+);
 var eventImage = document.getElementById("eventImage");
 var modalImageContainer = document.getElementById("modal-image-container");
 
 function openModal(eventID) {
-  var event = eventData[eventID]
+  var event = eventData[eventID];
   eventTitle.textContent = event.title;
   if (event.customDescription !== "") {
     eventDescriptionContainer.innerHTML = event.customDescription;
   } else {
-    eventDescriptionContainer.innerHTML = "<p>"+event.description+"</p>";
+    eventDescriptionContainer.innerHTML = "<p>" + event.description + "</p>";
   }
   eventClock.textContent = event.clock;
   eventPrice.textContent = event.price;
@@ -33,60 +35,53 @@ function openModal(eventID) {
     modalImageContainer.style.display = "inline";
     eventImage.src = event.image;
   }
-  
+
   modal.style.display = "block";
 }
 
-span.onclick = function() {
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
     modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-            modal.style.display = "none";
-        }
-}
-
-
+  }
+};
 
 // Event listeners for info buttons
 for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function(event) {
+  buttons[i].addEventListener("click", function (event) {
     var eventID = event.target.getAttribute("eventID");
     openModal(eventID);
   });
-  buttons[i].addEventListener("mouseenter", mouseEnter)
-  buttons[i].addEventListener("mouseleave", mouseLeave)
+  buttons[i].addEventListener("mouseenter", mouseEnter);
+  buttons[i].addEventListener("mouseleave", mouseLeave);
 }
 
-function mouseEnter(){
-  this.classList.add('hovered');
+function mouseEnter() {
+  this.classList.add("hovered");
 }
 
-function mouseLeave(){
-  this.classList.remove('hovered');
+function mouseLeave() {
+  this.classList.remove("hovered");
 }
 
 // Event listener for closing the modal with the escape key
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     modal.style.display = "none";
   }
 });
 
-
 //Hover Animation/Transition
-
-
-
 
 /* Event data */
 
 var eventData = {
-    "rajaton": {
-      "title": "Rajaton kohtaaminen",
-      "customDescription": 
-      `
+  rajaton: {
+    title: "Rajaton kohtaaminen",
+    customDescription: `
         <p>Tässä konsertissa Joensuun kaupunginorkersteri ja kapellimestari Huba Hollókői esittävät luonnon kauneutta kuvaavia teoksia. </p>
         <p><strong>Osa yksi: Sinfonia nr 1 Northern lights (Revontulet)</strong></p>
         <p>S&auml;velt&auml;j&auml; Kassu Halosen vuonna 2019 valmistunut sinfonia "Northern lights" on vaikuttava sinfoniateos, jonka alaotsikko kuuluu "Revontulet - taivaallinen valon&auml;ytelm&auml;". Sinfonia koostuu kolmesta osasta, ja s&auml;vellaji vaihtelee.</p>
@@ -106,26 +101,27 @@ var eventData = {
         <li><em>Iltarusko</em>: Kokonaisuuden p&auml;&auml;tteeksi tunnelmoidaan kes&auml;illan rauhallista iltaruskoa.</li>
         </ol>
       `,
-      "description": "Kassun sinfonia ja Onni Muikun lauluja. Ohjelmassa väliaika.",
-      "clock": "18:00",
-      "date": "Lauantai 2.9.",
-      "price": "25 / 22 €",
-      "venue": "Carelia-sali",
-      "image": "images/ViuluKevätTaivas.png" 
-    },
-    "ystavat": {
-      "title": "Olkaa hyvät, rakkaat ystävät",
-      "customDescription": "",
-      "description": "Tässä tapahtumassa festivaalin taiteellinen johtaja, pianisti Kemal Achourbekov, yhdessä vankan joukon taitavia esiintyjiä, säestää maagisine sormineen esityksen, joka on täynnä mieltä mullistavia yllätyksiä ja hämmästyttäviä käänteitä. <br> <br> Rakkaille ystäville, kanssa rakkaiden ystävien!",
-      "clock": "15:00",
-      "date": "Sunnuntai 3.9.",
-      "price": "20 / 17 €",
-      "venue": "Konservatorion sali",
-      "image": "images/jack-in-the-flygel.jpg"
-    },
-    "karjalaista": {
-      "title": "Karjalaista ja kansainvälistä",
-      "customDescription": `
+    description: "Kassun sinfonia ja Onni Muikun lauluja. Ohjelmassa väliaika.",
+    clock: "18:00",
+    date: "Lauantai 2.9.",
+    price: "25 / 22 €",
+    venue: "Carelia-sali",
+    image: "images/ViuluKevätTaivas.png",
+  },
+  ystavat: {
+    title: "Olkaa hyvät, rakkaat ystävät",
+    customDescription: "",
+    description:
+      "Tässä tapahtumassa festivaalin taiteellinen johtaja, pianisti Kemal Achourbekov, yhdessä vankan joukon taitavia esiintyjiä, säestää maagisine sormineen esityksen, joka on täynnä mieltä mullistavia yllätyksiä ja hämmästyttäviä käänteitä. <br> <br> Rakkaille ystäville, kanssa rakkaiden ystävien!",
+    clock: "15:00",
+    date: "Sunnuntai 3.9.",
+    price: "20 / 17 €",
+    venue: "Konservatorion sali",
+    image: "images/jack-in-the-flygel.jpg",
+  },
+  karjalaista: {
+    title: "Karjalaista ja kansainvälistä",
+    customDescription: `
       <div class="text-photo-container">
             <div class="text-part">
                 <p><strong>Osa yksi: Huojuva lato</strong></p>
@@ -158,38 +154,39 @@ var eventData = {
             </div>
         </div>
       `,
-      "description": "Taiga-kvartetti ja Huojuva lato",
-      "clock": "19:00",
-      "date": "Perjantai 1.9.",
-      "price": "15 €",
-      "venue": "Konservatorion sali",
-      "image": ""
-    },
-    "electro": {
-      "title": "ElectroJungle",
-      "customDescription": "",
-      "description": `Botanian trooppisessa puutarhassa järjestettävä elektroniselle musiikille pyhitetty tapahtuma tulee jälleen! Nauti rytmeistä ja idyllisistä maisemista viidakon ympäröimänä. Genre ja BPM muuttuvat illan edetessä – kuulet ainakin soivan house, tekno, psytrance ja drum & bass kappaleita. Paikan päällä anniskelu ja snack bar.
+    description: "Taiga-kvartetti ja Huojuva lato",
+    clock: "19:00",
+    date: "Perjantai 1.9.",
+    price: "15 €",
+    venue: "Konservatorion sali",
+    image: "",
+  },
+  electro: {
+    title: "ElectroJungle",
+    customDescription: "",
+    description: `Botanian trooppisessa puutarhassa järjestettävä elektroniselle musiikille pyhitetty tapahtuma tulee jälleen! Nauti rytmeistä ja idyllisistä maisemista viidakon ympäröimänä. Genre ja BPM muuttuvat illan edetessä – kuulet ainakin soivan house, tekno, psytrance ja drum & bass kappaleita. Paikan päällä anniskelu ja snack bar.
       <br><br>The Botania electronic music event is happening again! The lush tropics and breathtaking sundown combined with energizing music is truly an empowering experience. Genre and BPM will evolve during the event, and you will hear tracks of house, techno, psytrance and drum & bass. There is a snack bar on-site and alcoholic beverages are served.
       `,
-      "clock": "20 - 24",
-      "date": "Lauantai 26.8.",
-      "price": "9 €",
-      "venue": "Botania",
-      "image": "images/electronicInTheTropics.jpg"
-    },
-    "lasten": {
-      "title": "Lasten Botania",
-      "customDescription": "",
-      "description": "Lapsille kivoja musiikillisia askareita Botanian trooppisissa tiloissa!",
-      "clock": "11-15",
-      "date": "Sunnuntai 27.8.",
-      "price": "5€ / Perhelippu 20€ (6 henkeä)",
-      "venue": "Botania",
-      "image": "images/LastenMusiikkiviidakko.png"
-    },
-    "mestari": {
-      "title": "Mestarikurssien päätöskonsertti",
-      "customDescription": `
+    clock: "20 - 24",
+    date: "Lauantai 26.8.",
+    price: "9 €",
+    venue: "Botania",
+    image: "images/electronicInTheTropics.jpg",
+  },
+  lasten: {
+    title: "Lasten Botania",
+    customDescription: "",
+    description:
+      "Lapsille kivoja musiikillisia askareita Botanian trooppisissa tiloissa!",
+    clock: "11-15",
+    date: "Sunnuntai 27.8.",
+    price: "5€ / Perhelippu 20€ (6 henkeä)",
+    venue: "Botania",
+    image: "images/LastenMusiikkiviidakko.png",
+  },
+  mestari: {
+    title: "Mestarikurssien päätöskonsertti",
+    customDescription: `
       <p> Mestarikurssit huipentuvat jälleen yhteiskonserttiin Joensuun konservatoriolla! </p>
 
 <p> Opiskelijoille ilmoittautuminen ja lisätiedot: Kemal Achourbekov, kemal.achourbekov@konsa.joensuu.fi</p>
@@ -228,16 +225,16 @@ var eventData = {
     </div>
 </div>
       `,
-      "description": "Sellon ja sähkökitaran Mestarikurssit huipentuvat!",
-      "clock": "18:00",
-      "date": "Torstai 31.8.",
-      "price": "Maksuton",
-      "venue": "Konservatorio",
-      "image": ""
-    },
-    "taidebotania": {
-      "title": "Taidenäyttely: Monet maailmat Botaniassa",
-      "customDescription": `
+    description: "Sellon ja sähkökitaran Mestarikurssit huipentuvat!",
+    clock: "18:00",
+    date: "Torstai 31.8.",
+    price: "Maksuton",
+    venue: "Konservatorio",
+    image: "",
+  },
+  taidebotania: {
+    title: "Taidenäyttely: Monet maailmat Botaniassa",
+    customDescription: `
       
 <p><b>TOGETHER-ryhmä:</b> Kiiski Anita, Soininen Salli, Turunen Johanna</p>
 
@@ -262,7 +259,7 @@ var eventData = {
 <div class="image-flex">
 <figure>
     <img class="single-modal-image" src="./images/anittanharsomekko.jpg">
-    <figcaption>
+    <figcaption> 
         Anita Kiiski: Kukkamekot (2023)
     </figcaption>
 </figure>
@@ -288,7 +285,7 @@ var eventData = {
 <div class="image-flex">
 <figure>
     <img src="images/Salli1.jpg">
-    <figcaption> Salli Soininen </figcaption>
+    <figcaption> Salli Soininen: Kesäyö </figcaption>
 </figure>
 <figure>
     <img src="images/Salli3.jpg">
@@ -310,11 +307,11 @@ var eventData = {
 </p>
 
       `,
-      "description": "",
-      "clock": "",
-      "date": "21.8. - 4.9.",
-      "price": "Botanian kävijöille vapaa",
-      "venue": "Botania",
-      "image": "images/seasonspainted.jpg"
-    },
-  }
+    description: "",
+    clock: "",
+    date: "21.8. - 4.9.",
+    price: "Botanian kävijöille vapaa",
+    venue: "Botania",
+    image: "images/seasonspainted.jpg",
+  },
+};

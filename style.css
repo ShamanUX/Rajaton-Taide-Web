@@ -10,13 +10,12 @@ Orange= #FF6933
 
 */
 
-
-:root{
-  --accent-yellow: #F5DC00;
-  --accent-green: #52CC00;
-  --accent-purple: #52287B;
-  --accent-orange: #FF6933;
-  --accent-teal: #00B2CA;
+:root {
+  --accent-yellow: #f5dc00;
+  --accent-green: #52cc00;
+  --accent-purple: #52287b;
+  --accent-orange: #ff6933;
+  --accent-teal: #00b2ca;
   --background-main: #fff9f0;
 }
 
@@ -25,9 +24,7 @@ Orange= #FF6933
   border-top: solid 1px lightgrey;
   width: 90%;
   margin-bottom: 20px;
-
 }
-
 
 /* Burger Menu Styling */
 .burger-menu {
@@ -35,10 +32,9 @@ Orange= #FF6933
   justify-self: left;
 }
 
-#burger-logo{
+#burger-logo {
   filter: invert(1);
 }
-
 
 /* Navigation Styling */
 nav {
@@ -52,8 +48,12 @@ nav {
   background-color: #be520aa7;
 }
 
-.subpage-header{
-  background-image: url('images/Violin\ by\ the\ river.png');
+/* =================================
+   Header for subpages 
+   ================================= */
+
+.subpage-header {
+  background-image: url("images/Violin\ by\ the\ river.png");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -69,6 +69,10 @@ nav {
   width: 100%;
 }
 
+/* =================================
+   Header for main page 
+   ================================= */
+
 .headerSection {
   min-height: 100vh;
   display: block;
@@ -77,7 +81,7 @@ nav {
   background-position: center;
   overflow: hidden;
   position: relative;
-  background-image: url('images/Violin\ by\ the\ river.png');
+  background-image: url("images/Violin\ by\ the\ river.png");
 }
 
 .header-background {
@@ -128,16 +132,15 @@ nav {
   width: 80%;
 }
 
-#slogan{
+#slogan {
   width: 250%;
   max-width: 400px;
   min-width: 200px;
 }
 
-
-
-
-/* Footer */
+/* =================================
+   Footer 
+   ================================= */
 
 footer {
   background-color: var(--background-main);
@@ -156,7 +159,6 @@ footer {
 
 .footer-content p {
   margin: 0;
-
 }
 
 .footer-links {
@@ -177,10 +179,12 @@ footer {
 .footer-links a {
   text-decoration: none;
   color: #555;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
-/* footer end */
+/* =================================
+   Body 
+   ================================= */
 
 body {
   background-color: none;
@@ -191,9 +195,9 @@ body {
   flex-direction: column;
 }
 
-.body-content{
+.body-content {
   padding: 5px;
-  background: linear-gradient(25deg,#fff9f0 85%, #eb750883 );
+  background: linear-gradient(25deg, #fff9f0 85%, #eb750883);
   background-color: var(--background-main);
 }
 
@@ -204,7 +208,7 @@ body {
   align-items: top;
 }
 
-.subpage-body-content{
+.subpage-body-content {
   background-color: var(--background-main);
   min-height: 100% !important;
   position: relative;
@@ -213,7 +217,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  
 }
 
 .photo-part {
@@ -266,57 +269,30 @@ body {
   opacity: 0.8;
 }
 
-.subpage-bg-left{
+.subpage-bg-left {
   left: 0;
   /* Add a feather effect to background*/
-  background-image: url("images/violin\ splash\ corrected\ right.png"), 
-  linear-gradient(to right, rgba(255, 255, 255, 0), #fff9f0a1);
+  background-image: url("images/violin\ splash\ corrected\ right.png"),
+    linear-gradient(to right, rgba(255, 255, 255, 0), #fff9f0a1);
   background-blend-mode: overlay;
   background-position: left center;
 }
 
-.subpage-bg-right{
+.subpage-bg-right {
   right: 0;
   background-image: url("images/violin\ splash\ corrected\ left.png"),
-  linear-gradient(to left, rgba(255, 255, 255, 0), #fff9f0a1);
+    linear-gradient(to left, rgba(255, 255, 255, 0), #fff9f0a1);
   background-position: right center;
   background-blend-mode: overlay;
 }
 
-/* IMAGE GRID */
-
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  row-gap: 40px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.image-grid a {
-  flex: 0 0 calc(33.33% - 40px);
-  max-width: calc(33.33% - 40px);
-  height: auto;
-}
-
-.image-grid img {
-  width: 100%;
-}
-
-/* IMAGE GRID END */
-
-
-
+/* Horizontal flex-container for images*/
 .image-flex {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  max-width: 100%
+  max-width: 100%;
 }
 .image-flex figure img {
   object-fit: contain;
@@ -326,8 +302,6 @@ body {
 .image-flex figure {
   text-align: center;
 }
-
-
 
 .video-container {
   position: relative;
@@ -344,9 +318,7 @@ body {
   height: 100%;
 }
 
-/* fonts */
-
-.header-date{
+.header-date {
   margin: 0px;
   text-align: center;
   color: #fff;
@@ -364,43 +336,67 @@ body {
   color: #333;
 }
 
+/* =================================
+   Fonts 
+   ================================= */
+
 @font-face {
   font-family: "legault";
   src: url("fonts/LegaultStd.otf");
 }
 
 ol li {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 h1 {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: 700;
 }
 
 h2 {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 h3 {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 p {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 figcaption {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   text-align: center;
 }
 
+#nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  margin: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .text-shadow {
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .text-stroke {
@@ -408,15 +404,9 @@ figcaption {
 }
 
 .text-stroke-outside {
-  text-shadow:
-    -2px -2px 0 #ad5809,
-     0   -2px 0 #ad5809,
-     2px -2px 0 #ad5809,
-     2px  0   0 #ad5809,
-     2px  2px 0 #ad5809,
-     2px  2px 0 #ad5809,
-    -2px  2px 0 #ad5809,
-    -2px  0   0 #ad5809;
+  text-shadow: -2px -2px 0 #ad5809, 0 -2px 0 #ad5809, 2px -2px 0 #ad5809,
+    2px 0 0 #ad5809, 2px 2px 0 #ad5809, 2px 2px 0 #ad5809, -2px 2px 0 #ad5809,
+    -2px 0 0 #ad5809;
 }
 
 .subpage-title {
@@ -433,9 +423,9 @@ figcaption {
   font-size: 20px;
 }
 
-/* fonts end */
-
-/* icons */
+/* =================================
+   Icons 
+   ================================= */
 
 .scroll-icon-container {
   width: 54px;
@@ -458,9 +448,9 @@ figcaption {
 
 .info-icon {
   border-radius: 50%;
-  color: #FFF;
-  font-family: 'roboto', sans-serif;
-  background-color: #00B2CA;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  background-color: #00b2ca;
   width: 40px;
   height: 40px;
   text-align: center;
@@ -469,7 +459,7 @@ figcaption {
 }
 
 .info-icon-text {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: 30px;
   pointer-events: none;
@@ -480,29 +470,9 @@ figcaption {
   pointer-events: none;
 }
 
-/* icons end */
-
-#nav-links {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  
-}
-
-nav li {
-  margin: 10px 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-family: 'Merriweather', serif;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-/* MODAL */
+/* =================================
+   MODAL 
+   ================================= */
 
 .modal {
   display: none; /* Hidden by default */
@@ -513,8 +483,8 @@ nav a {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -549,7 +519,6 @@ nav a {
   justify-content: center;
   align-items: center;
   min-width: 30%;
-
 }
 
 #eventTitle {
@@ -566,7 +535,7 @@ nav a {
   text-align: center;
 }
 
-/* The Close Button */
+/* modal close button */
 .close {
   color: #aaa;
   font-size: 60px;
@@ -587,12 +556,9 @@ nav a {
   width: 50%;
 }
 
-/*MODAL END*/
-
-
-/* CONCERT INFO WIDGET */
-
-/* Widget grid */
+/* =================================
+   Concert info cards 
+   ================================= */
 
 .widget-grid {
   display: grid;
@@ -615,9 +581,6 @@ nav a {
   color: #333;
 }
 
-
-
-/* Set up the left part of the widget */
 .widget-left {
   flex: 1;
   height: 100%;
@@ -627,10 +590,8 @@ nav a {
   padding-bottom: 20px;
   background-color: none !important;
   background-size: cover;
-  
 }
 
-/* Set up the right part of the widget */
 .widget-right {
   flex: 1;
   height: 100%;
@@ -640,31 +601,12 @@ nav a {
   background-position: center;
 }
 
-/* Style the title, description, and button */
 .widget-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
   min-height: 3em;
 }
-
-/* color classes for widget */
-.green {
-  background-color: #52CC00;
-}
-
-.orange {
-  background-color: #FF6933;
-}
-
-.teal {
-  background-color: #00B2CA;
-}
-
-.yellowish {
-  background:  linear-gradient(320deg,#f5c800, #ffde4a);
-}
-
 
 ul.widget-shortInfo {
   list-style: none;
@@ -676,7 +618,7 @@ ul.widget-shortInfo li {
   margin-bottom: 5px;
 }
 
-ul.widget-shortInfo li:last-child{
+ul.widget-shortInfo li:last-child {
   margin-bottom: 50px;
 }
 
@@ -689,8 +631,8 @@ ul.widget-shortInfo li:last-child{
 .widget-button {
   padding: 10px 20px;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight:700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   text-decoration: none;
   color: #fff;
   background-color: #52287b;
@@ -704,8 +646,8 @@ ul.widget-shortInfo li:last-child{
   cursor: pointer;
   padding: 10px 20px;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight:700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   text-decoration: none;
   color: #fff;
   background-color: #333;
@@ -718,18 +660,19 @@ ul.widget-shortInfo li:last-child{
 }
 
 .hovered {
-  background-color: #818181 !important; 
+  background-color: #818181 !important;
 }
 
-
-
+/* =================================
+   MEDIA QUERIES 
+   ================================= */
 
 @media (max-width: 1100px) {
   .header-background {
     object-position: right 0 bottom 0;
   }
 
-  .text-photo-container{
+  .text-photo-container {
     flex-direction: column;
   }
 
@@ -740,14 +683,12 @@ ul.widget-shortInfo li:last-child{
     width: 100%;
   }
 
-  .widget-grid{
+  .widget-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media (max-width: 850px) {
-  
   .modalContent-inner {
     flex-direction: column;
   }
@@ -756,10 +697,10 @@ ul.widget-shortInfo li:last-child{
     grid-template-columns: repeat(1, 1fr);
   }
 
-
-  .subpage-bg-left, .subpage-bg-right {
+  .subpage-bg-left,
+  .subpage-bg-right {
     opacity: 0.3;
-    width: 15%
+    width: 15%;
   }
 
   .subpage-text-container {
@@ -775,7 +716,6 @@ ul.widget-shortInfo li:last-child{
     font-size: 16px;
   }
 
-  
   .body-content {
     background: #fff9f0;
   }
@@ -809,12 +749,9 @@ ul.widget-shortInfo li:last-child{
     flex: 0 0 calc(50% - 10px);
     max-width: calc(50% - 10px);
   }
-
 }
 
-
 @media (max-width: 480px) {
-  
   .single-modal-image {
     width: 100%;
   }
@@ -827,7 +764,7 @@ ul.widget-shortInfo li:last-child{
     flex-direction: column;
   }
 
-  .modal-right{
+  .modal-right {
     display: none !important;
   }
 
@@ -850,6 +787,4 @@ ul.widget-shortInfo li:last-child{
 
   .header-date {
   }
-  
-
 }
