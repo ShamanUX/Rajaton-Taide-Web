@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musiikkielämyksiä Joensuussa: Rajaton Taide -festivaali(2023)</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="keywords" content="musiikkifestivaali, musiikkitapahtuma, livemusiikki, joensuu, 2023, ohjelma, elektroninen musiikki, electronic music, joensuun konservatorio, carelia-sali, botania">
-    <meta name="description" content ="Joensuulainen musiikki- ja taidefestivaali. 26.8. - 3.9. Koe elämys. Elä Kokemus. Taiteellinen johtaja Kemal Achourbekov.">
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="keywords"
+      content="musiikkifestivaali, musiikkitapahtuma, livemusiikki, joensuu, 2023, ohjelma, elektroninen musiikki, electronic music, joensuun konservatorio, carelia-sali, botania"
+    />
+    <meta
+      name="description"
+      content="Joensuulainen musiikki- ja taidefestivaali. 26.8. - 3.9. Koe elämys. Elä Kokemus. Taiteellinen johtaja Kemal Achourbekov."
+    />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap");
     </style>
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c29d380e-3237-4377-bcf7-c70b6bcf9670" data-blockingmode="auto" type="text/javascript"></script>
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="c29d380e-3237-4377-bcf7-c70b6bcf9670"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <header class="headerSection">
       <nav>
         <div class="burger-menu">
           <div class="burger">
-            <img src="icons/menu.png" id="burger-logo">
+            <img src="icons/menu.png" id="burger-logo" />
           </div>
         </div>
         <ul id="nav-links">
-          <li><a id="ohjelma-link" style="cursor: pointer;">Ohjelma</a></li>
+          <li><a id="ohjelma-link" style="cursor: pointer">Ohjelma</a></li>
           <li><a href="info.html">Meistä</a></li>
           <li><a href="kumppanit.html">Kumppanit</a></li>
           <li><a href="liput.html">Liput</a></li>
         </ul>
       </nav>
       <div class="header-info">
-        <img class="logo" src="images/RT LOGO circular.png" alt="logo" >
-        <img id="slogan" src="fonts/rajaton taide slogan.png" alt="Slogan: Koe elämys, Elä kokemus">
-        <h1 class="header-date text-stroke-outside">Joensuussa <br> 26.8. - 3.9. </h1>
-        
+        <img class="logo" src="images/RT LOGO circular.png" alt="logo" />
+        <img
+          id="slogan"
+          src="fonts/rajaton taide slogan.png"
+          alt="Slogan: Koe elämys, Elä kokemus"
+        />
+        <h1 class="header-date text-stroke-outside">
+          Joensuussa <br />
+          26.8. - 3.9.
+        </h1>
+
         <div class="scroll-icon-container" id="scroll-button">
-          <img class="header-scroll-icon" src="icons/down.png" alt="'Scroll down' -icon">
+          <img
+            class="header-scroll-icon"
+            src="icons/down.png"
+            alt="'Scroll down' -icon"
+          />
         </div>
       </div>
     </header>
-    
 
     <div class="body-content" id="body-content">
-
       <!-- MODAL -->
-      <div id="infoModal" class="modal">     
-          <div class="modalContent">
-            <span class="close">&times;</span>
-            <h2 id="eventTitle">Eventin nimi</h2>
-            <div class="solid-divider"></div>
-            <div class="modalContent-inner">
-              <div class="modal-left">
-                <h3 id="eventDate">16.6.</h3>
-                <h3 id="eventVenue">Carelia-sali</h3>
-                <h3 id="eventClock">16:00</h3>
-                <h3 id="eventPrice">15/10 €</h3>
-                <div id="eventDescriptionContainer">
-                </div>
-                
-              </div>
-              <div class="modal-right" id="modal-image-container">
-                <img id="eventImage" src="images/Cranberrythumbnail.png" alt="konsertin kuvituskuva">
-              </div>
+      <div id="infoModal" class="modal">
+        <div class="modalContent">
+          <span class="close">&times;</span>
+          <h2 id="eventTitle">Eventin nimi</h2>
+          <div class="solid-divider"></div>
+          <div class="modalContent-inner">
+            <div class="modal-left">
+              <h3 id="eventDate">16.6.</h3>
+              <h3 id="eventVenue">Carelia-sali</h3>
+              <h3 id="eventClock">16:00</h3>
+              <h3 id="eventPrice">15/10 €</h3>
+              <div id="eventDescriptionContainer"></div>
+            </div>
+            <div class="modal-right" id="modal-image-container">
+              <img
+                id="eventImage"
+                src="images/Cranberrythumbnail.png"
+                alt="konsertin kuvituskuva"
+              />
             </div>
           </div>
         </div>
+      </div>
       <!-- MODAL -->
 
       <h1 class="body-heading" id="ohjelma">Ohjelma 2023</h1>
@@ -73,17 +96,31 @@
             <h2 class="widget-title">Karjalaista ja kansainvälistä</h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">1.9. | 19:00</h3></li>
-              <li><h3 class="widget-description">Joensuun konservatorio</h3></li>
-              <li><h3 class="widget-description">15 € </h3></li>
+              <li>
+                <h3 class="widget-description">Joensuun konservatorio</h3>
+              </li>
+              <li><h3 class="widget-description">15 €</h3></li>
             </ul>
             <div class="widget-buttonRow">
               <button eventID="karjalaista" class="info-icon">
-                <span class="info-icon-text" > i </span> 
+                <span class="info-icon-text"> i </span>
               </button>
-              <a target ="_blank" href="https://rajatontaide.eventiolive.fi/events/649441116819f7b62a8b4569/" class="widget-button">LIPUT &gt;</a>
+              <a
+                target="_blank"
+                href="https://rajatontaide.eventiolive.fi/events/649441116819f7b62a8b4569/"
+                class="widget-button"
+                >LIPUT &gt;</a
+              >
             </div>
           </div>
-          <div title="Vanhanaikaiset juhlat karjalaistyylisen ladon edessä" class="widget-right" style="background-image: url(images/karjalaistajakansainvalista.png); background-position: right;"></div>
+          <div
+            title="Vanhanaikaiset juhlat karjalaistyylisen ladon edessä"
+            class="widget-right"
+            style="
+              background-image: url(images/karjalaistajakansainvalista.png);
+              background-position: right;
+            "
+          ></div>
         </div>
 
         <!-- RAJATON KOHTAAMINEN -->
@@ -97,33 +134,56 @@
             </ul>
             <div class="widget-buttonRow">
               <button eventID="rajaton" class="info-icon">
-                <span class="info-icon-text" > i </span> 
+                <span class="info-icon-text"> i </span>
               </button>
-              <a target="_blank" href="https://www.eventim-light.com/fi/a/5cf0e42e36e54b0001789765/e/64abdc1f8cc4c91da517b81f" class="widget-button">LIPUT &gt;</a>
+              <a
+                target="_blank"
+                href="https://www.eventim-light.com/fi/a/5cf0e42e36e54b0001789765/e/64abdc1f8cc4c91da517b81f"
+                class="widget-button"
+                >LIPUT &gt;</a
+              >
             </div>
           </div>
-          <div class="widget-right" title="Viulu kevättaivasta vasten" style="background-image: url(images/ViuluKevätTaivas.png); background-position: left"></div>
+          <div
+            class="widget-right"
+            title="Viulu kevättaivasta vasten"
+            style="
+              background-image: url(images/ViuluKevätTaivas.png);
+              background-position: left;
+            "
+          ></div>
         </div>
 
         <!-- RAKKAAT YSTÄVÄT -->
         <div class="widget">
           <div class="widget-left">
-            <h2 class="widget-title">Olkaa hyvät,<br>rakkaat ystävät</h2>
+            <h2 class="widget-title">Olkaa hyvät,<br />rakkaat ystävät</h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">3.9. | 15:00</h3></li>
-              <li><h3 class="widget-description">Joensuun konservatorio</h3></li>
+              <li>
+                <h3 class="widget-description">Joensuun konservatorio</h3>
+              </li>
               <li><h3 class="widget-description">20 / 17 €</h3></li>
             </ul>
             <div class="widget-buttonRow">
               <button eventID="ystavat" class="info-icon">
-                <span class="info-icon-text" > i </span> 
+                <span class="info-icon-text"> i </span>
               </button>
-              <a target="_blank" href="https://rajatontaide.eventiolive.fi/events/6494466c60dee938228b4569/" class="widget-button">LIPUT &gt;</a>
+              <a
+                target="_blank"
+                href="https://rajatontaide.eventiolive.fi/events/6494466c60dee938228b4569/"
+                class="widget-button"
+                >LIPUT &gt;</a
+              >
             </div>
           </div>
-          <div class="widget-right" title="Flyygeli, jonka sisältä lentää konfettia" style="background-image: url(images/jack-in-the-flygel.jpg);"></div>
+          <div
+            class="widget-right"
+            title="Flyygeli, jonka sisältä lentää konfettia"
+            style="background-image: url(images/jack-in-the-flygel.jpg)"
+          ></div>
         </div>
-        
+
         <!-- ELECTRONIC IN THE TROPICS -->
         <div class="widget">
           <div class="widget-left">
@@ -135,11 +195,15 @@
             </ul>
             <div class="widget-buttonRow">
               <button eventID="electro" class="info-icon">
-                <span class="info-icon-text" > i </span> 
+                <span class="info-icon-text"> i </span>
               </button>
             </div>
           </div>
-          <div title="Futuristinen elektronisen musiikin venuu, viidakkoinen" class="widget-right" style="background-image: url(images/electronicInTheTropics.jpg);"></div>
+          <div
+            title="Futuristinen elektronisen musiikin venuu, viidakkoinen"
+            class="widget-right"
+            style="background-image: url(images/electronicInTheTropics.jpg)"
+          ></div>
         </div>
 
         <!-- Lasten Musiikkiviidakko -->
@@ -149,15 +213,23 @@
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">27.8. | 11:00-15:00</h3></li>
               <li><h3 class="widget-description">Botania</h3></li>
-              <li><h3 class="widget-description"> 5€ / Perhelippu 20€ (6 henkeä) </h3></li>
+              <li>
+                <h3 class="widget-description">
+                  5€ / Perhelippu 20€ (6 henkeä)
+                </h3>
+              </li>
             </ul>
             <div class="widget-buttonRow">
               <button eventID="lasten" class="info-icon">
-                <span class="info-icon-text" > i </span> 
+                <span class="info-icon-text"> i </span>
               </button>
             </div>
           </div>
-          <div title="Lapset innoissaan hauskasta musiikista viidakossa" class="widget-right" style="background-image: url(images/LastenMusiikkiviidakko.png);"></div>
+          <div
+            title="Lapset innoissaan hauskasta musiikista viidakossa"
+            class="widget-right"
+            style="background-image: url(images/LastenMusiikkiviidakko.png)"
+          ></div>
         </div>
 
         <!-- ELECTRONIC IN THE TROPICS -->
@@ -171,73 +243,88 @@
             </ul>
             <div class="widget-buttonRow">
               <button eventID="mestari" class="info-icon">
-                <span class="info-icon-text" > i </span> 
+                <span class="info-icon-text"> i </span>
               </button>
             </div>
           </div>
-          <div title="Fiini sello ja sähkökitara, mestarikurssi" class="widget-right" style="background-image: url(images/masterclass\ illustration.jpg);"></div>
+          <div
+            title="Fiini sello ja sähkökitara, mestarikurssi"
+            class="widget-right"
+            style="background-image: url(images/masterclass\ illustration.jpg)"
+          ></div>
         </div>
         <div class="widget widget-lastrow">
           <div class="widget-left">
-            <h2 class="widget-title">Taidenäyttely: Monet maailmat Botaniassa</h2>
+            <h2 class="widget-title">
+              Taidenäyttely: Monet maailmat Botaniassa
+            </h2>
             <ul class="widget-shortInfo">
               <li><h3 class="widget-description">21.8. - 4.9.</h3></li>
               <li><h3 class="widget-description">Botania</h3></li>
-              <li><h3 class="widget-description">Botanian kävijöille vapaa</h3></li>
+              <li>
+                <h3 class="widget-description">Botanian kävijöille vapaa</h3>
+              </li>
             </ul>
             <div class="widget-buttonRow">
               <button eventID="taidebotania" class="info-icon">
-                <span class="info-icon-text" > i </span> 
+                <span class="info-icon-text"> i </span>
               </button>
             </div>
           </div>
-          <div title="Botanian taidetapahtuma" class="widget-right" style="
-          background-image: url(images/seasonspainted.jpg);
-          background-position: left;">
-          </div>
+          <div
+            title="Botanian taidetapahtuma"
+            class="widget-right"
+            style="
+              background-image: url(images/seasonspainted.jpg);
+              background-position: left;
+            "
+          ></div>
         </div>
-      
-    </div> <!-- grid end -->
-    
-
+      </div>
+      <!-- grid end -->
     </div>
-      
-      <footer>
-        <div class="footer-content">
-          <div class="solid-divider" style="width: 100%;"></div>
-          <p>Rajaton Taide</p>
-          <ul class="footer-links">
-            <li><a href="/">Ohjelma</a></li>
-            <li><a href="info.html">Meistä</a></li>
-            <li><a href="kumppanit.html">Kumppanit</a></li>
-            <li><a href="liput.html">Liput</a></li>
-          </ul>
-          <p style="color: #555"> Kemal Achourbekov |  ​050 5742753  |  kemal.achourbekov@konsa.joensuu.fi </p>
-        </div>
-      </footer>
-    
-    
-    
-<!-- Start Open Web Analytics Tracker -->
-<script type="text/javascript">
-  //<![CDATA[
-  var owa_baseUrl = 'http://rajatontaide.fi/owa/';
-  var owa_cmds = owa_cmds || [];
-  owa_cmds.push(['setSiteId', '7c2d25efe160f9606e4e3b6562ce5802']);
-  owa_cmds.push(['trackPageView']);
-  owa_cmds.push(['trackClicks']);
-  
-  (function() {
-      var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
-      owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
-      _owa.src = owa_baseUrl + 'modules/base/dist/owa.tracker.js';
-      var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-  }());
-  //]]>
-  </script>
-  <!-- End Open Web Analytics Code -->
+
+    <footer>
+      <div class="footer-content">
+        <div class="solid-divider" style="width: 100%"></div>
+        <p>Rajaton Taide</p>
+        <ul class="footer-links">
+          <li><a href="/">Ohjelma</a></li>
+          <li><a href="info.html">Meistä</a></li>
+          <li><a href="kumppanit.html">Kumppanit</a></li>
+          <li><a href="liput.html">Liput</a></li>
+        </ul>
+        <p style="color: #555">
+          Kemal Achourbekov | ​050 5742753 | kemal.achourbekov@konsa.joensuu.fi
+        </p>
+      </div>
+    </footer>
+
+    <!-- Start Open Web Analytics Tracker -->
+    <script type="text/javascript">
+      //<![CDATA[
+      var owa_baseUrl = "http://rajatontaide.fi/owa/";
+      var owa_cmds = owa_cmds || [];
+      owa_cmds.push(["setSiteId", "7c2d25efe160f9606e4e3b6562ce5802"]);
+      owa_cmds.push(["trackPageView"]);
+      owa_cmds.push(["trackClicks"]);
+
+      (function () {
+        var _owa = document.createElement("script");
+        _owa.type = "text/javascript";
+        _owa.async = true;
+        owa_baseUrl =
+          "https:" == document.location.protocol
+            ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, "https:")
+            : owa_baseUrl;
+        _owa.src = owa_baseUrl + "modules/base/dist/owa.tracker.js";
+        var _owa_s = document.getElementsByTagName("script")[0];
+        _owa_s.parentNode.insertBefore(_owa, _owa_s);
+      })();
+      //]]>
+    </script>
+    <!-- End Open Web Analytics Code -->
     <script src="script.js"></script>
     <script src="infoModal.js"></script>
-    
   </body>
 </html>
