@@ -624,7 +624,6 @@ nav a {
   background-position: center;
 }
 
-/* Style the title, description, and button */
 .widget-title {
   font-size: 24px;
   font-weight: bold;
@@ -686,6 +685,10 @@ ul.widget-shortInfo li:last-child {
 .hovered {
   background-color: #818181 !important;
 }
+
+/* =================================
+   MEDIA QUERIES 
+   ================================= */
 
 @media (max-width: 1100px) {
   .header-background {
