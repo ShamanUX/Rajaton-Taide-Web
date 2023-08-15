@@ -90,7 +90,8 @@ var eventData = {
         <p>Kuten Aleksis Kiven "Seitsem&auml;n veljest&auml;" -teoksessa kerrotaan, Jukolan veljekset tarkkailivat useana talviy&ouml;n&auml; Impivaaran ikkunasta "kelmeitten revontulten v&auml;lkkyn&auml;t&auml; pohjosessa". He n&auml;kiv&auml;t, miten revontulet kajastivat kauas vuorenharjulta, partaisten kuusten takaa. Valo v&auml;lkkyi ja &auml;&auml;net&ouml;n soitto syttyi ja sammui taivaalla, luoden himme&auml;n valon. T&auml;t&auml; lumoavaa n&auml;ytelm&auml;&auml; my&ouml;s Kassu seurasi lapsuudessaan Ouluj&auml;rven rannalla, ihmetellen ilmi&ouml;n alkuper&auml;&auml; ja syyt&auml;. Sinfonia on omistettu t&auml;lle juhlalliselle ilmi&ouml;lle.</p>
         <hr />
         <p><strong>Osa kaksi: Onni Muikun teoksia</strong></p>
-        <p>Karjalan kev&auml;&auml;n nimell&auml; kulkevassa kokonaisuudessa esitet&auml;&auml;n Onni Muikun teoksia, jotka ovat saaneet inspiraationsa karjalan kauniista luonnosta.</p>
+        <p>Karjalan kev&auml;&auml;n nimell&auml; kulkevassa kokonaisuudessa esitet&auml;&auml;n Onni Muikun teoksia, jotka ovat saaneet inspiraationsa karjalan kauniista luonnosta. 
+        Teoksen ovat sovittaneet Istan Zaborsky ja Arto Tarkkonen.</p>
         <p>Kokonaisuus koostuu seuraavista osista:</p>
         <ol>
         <li><em>Kev&auml;tt&auml; kohti</em>: Teoksen alussa tunnelmoidaan kev&auml;&auml;n odotusta ja kasvavaa toivoa.</li>
@@ -235,77 +236,85 @@ var eventData = {
   taidebotania: {
     title: "Taidenäyttely: Monet maailmat Botaniassa",
     customDescription: `
-      
-<p><b>TOGETHER-ryhmä:</b> Kiiski Anita, Soininen Salli, Turunen Johanna</p>
+    <p><b>TOGETHER-ryhmä:</b> Kiiski Anita, Soininen Salli, Turunen Johanna</p>
 
-<p>
-    Kuvataide kumpuaa tarpeesta tallentaa kokemuksia kuvaksi – surua, iloa ja arjen ja
-    ympäristön totuutta. Kuva vie tekijän ja taiteen katsojan mukaan väriin, muotoon ja
-    teemaan. Tämän ryhmänäyttelyn teoksissa karjalaisuus on vahvasti läsnä tunnelmissa ja
-    kokemuksissa.
-</p>
-
-<p>
-    <b>Anita Kiiski</b>: Anita Kiiskin harsotöissä yhdistyy todellinen maailma ja mielikuvitusmaailma.
-    Sadunomaiset teokset ovat ommeltu ja kirjottu käsin harsokankaalle. Kevyiden ja
-    sadunomaisten harsomekkojen voi kuvitella olevan kuin suloinen tanssiin kutsu musiikin
+    <p>
+      Kuvataide kumpuaa tarpeesta tallentaa kokemuksia kuvaksi – surua, iloa ja
+      arjen ja ympäristön totuutta. Kuva vie tekijän ja taiteen katsojan mukaan
+      väriin, muotoon ja teemaan. Tämän ryhmänäyttelyn teoksissa karjalaisuus on
+      vahvasti läsnä tunnelmissa ja kokemuksissa.
+    </p>
     
-    soidessa. Vaaleanvihreän keijukaisen mekon taiteilija on täyttänyt eri värisillä organza-
-    kukilla ja valkoinen kukkamekko on saanut koristeekseen sinisellä ja vihreällä kirjotut
+    <p>
+      <b>Anita Kiiski</b>: Anita Kiiskin harsotöissä yhdistyy todellinen maailma ja
+      mielikuvitusmaailma. Sadunomaiset teokset ovat ommeltu ja kirjottu käsin
+      harsokankaalle. Kevyiden ja sadunomaisten harsomekkojen voi kuvitella olevan
+      kuin suloinen tanssiin kutsu musiikin soidessa. Vaaleanvihreän keijukaisen
+      mekon taiteilija on täyttänyt eri värisillä organza- kukilla ja valkoinen
+      kukkamekko on saanut koristeekseen sinisellä ja vihreällä kirjotut kukkaset.
+    </p>
     
-    kukkaset.
-</p>
-
-<div class="image-flex">
-<figure>
-    <img class="single-modal-image" src="./images/anittanharsomekko.jpg">
-    <figcaption> 
-        Anita Kiiski: Kukkamekot (2023)
-    </figcaption>
-</figure>
-</div>
-
-<p>
-    Kiiski on toiselta ammatiltaan lastentarhanopettaja ja satujen maailma on siirtynyt
-    voimakkaasti hänen kuvalliseen ilmaisuunsa. Herkät ja hauraat tekstiilit tuovat monen
-    katsojan mieleen elämän rajallisuuden ja ihmisen haavoittuvuuden.
-</p>
-<br>
-<p>
-    <b>Salli Soininen</b>: Aika on abstrakti käsite, joka kuvaa tapahtumien järjestystä ja kulkua. Se
-    on jatkuva virta, joka etenee tulevaisuuteen. Aika on subjektiivinen ja henkilökohtainen
-    käsite, jonka meistä kukin kokee omalla tavallaan. On hetkiä, joita ei jää kaipaamaan ja
-    onneksi on hetkiä, joita haluaa pysäyttää, säilyttää tai tallentaa.
-    Soinisen teoksissa on hetken tunnelma – hämärä, valo tai kirkkaus. Jossain maalauksessa
-    se on ohikiitävä hetki maiseman värikylläisyydestä; ilma on viileä ja raikas, värit lämpimän
-    syleileviä. Vastakohtien sopusointuinen tunnelma näyttäytyy vain hetken, kunnes aika
-    kulkee eteenpäin ja luonto valmistautuu toiseen hetkiseen.
-</p>
-
-<div class="image-flex">
-<figure>
-    <img src="images/Salli1.jpg">
-    <figcaption> Salli Soininen: Kesäyö </figcaption>
-</figure>
-<figure>
-    <img src="images/Salli3.jpg">
-    <figcaption> Salli Soininen </figcaption>
-</figure>
-</div>
-
-
-
-<br>
-<p>
-    <b>Johanna Turunen</b>: Turunen on tämän näyttelyn teoksia maalannut kesämökillään,
-    pienessä ja pimeässä lautarakenteisessa liiterissä. Tässä pohjoiskarjalaisessa
-    kesäateljeessaan hän on katsellut pienestä ikkunasta näkyvää vastarantaa ja maalannut
-    sen muuttuvaa luonnetta useiksi pieniksi maalauksiksi. Maiseman muutosta tutkiessaan
-    hän on myös aistinut työtilan intensiivisen tunnelman ja menneen maailman tunnun.
-    Together-ryhmä on perustettu vuonna 2015, jolloin ryhmän teoksia oli esillä Vilnan
-    kaupungintalolla Joensuu – Vilna ystävyyskaupunkitoiminnan 45-vuotisjuhlan yhteydessä.
-</p>
-
+    <div class="image-flex">
+      <figure>
+        <img class="single-modal-image" src="./images/anittanharsomekko.jpg" />
+        <figcaption>Anita Kiiski: Kukkamekot, 2023</figcaption>
+      </figure>
+    </div>
+    
+    <p>
+      Kiiski on toiselta ammatiltaan lastentarhanopettaja ja satujen maailma on
+      siirtynyt voimakkaasti hänen kuvalliseen ilmaisuunsa. Herkät ja hauraat
+      tekstiilit tuovat monen katsojan mieleen elämän rajallisuuden ja ihmisen
+      haavoittuvuuden.
+    </p>
+    <br />
+    <p>
+      <b>Salli Soininen</b>: Aika on abstrakti käsite, joka kuvaa tapahtumien
+      järjestystä ja kulkua. Se on jatkuva virta, joka etenee tulevaisuuteen. Aika
+      on subjektiivinen ja henkilökohtainen käsite, jonka meistä kukin kokee omalla
+      tavallaan. On hetkiä, joita ei jää kaipaamaan ja onneksi on hetkiä, joita
+      haluaa pysäyttää, säilyttää tai tallentaa. Soinisen teoksissa on hetken
+      tunnelma – hämärä, valo tai kirkkaus. Jossain maalauksessa se on ohikiitävä
+      hetki maiseman värikylläisyydestä; ilma on viileä ja raikas, värit lämpimän
+      syleileviä. Vastakohtien sopusointuinen tunnelma näyttäytyy vain hetken,
+      kunnes aika kulkee eteenpäin ja luonto valmistautuu toiseen hetkiseen.
+    </p>
+    
+    <div class="image-flex">
+      <figure>
+        <img src="images/Salli1.jpg" />
+        <figcaption>Salli Soininen: Kesäyö, 2022 (80 x 100)</figcaption>
+      </figure>
+      <figure>
+        <img src="images/Salli3.jpg" />
+        <figcaption>Salli Soininen: Hedelmiä pöydällä, 2023 (70 x 110)</figcaption>
+      </figure>
+    </div>
+    
+    <br />
+    <p>
+      <b>Johanna Turunen</b>: Turunen on tämän näyttelyn teoksia maalannut
+      kesämökillään, pienessä ja pimeässä lautarakenteisessa liiterissä. Tässä
+      pohjoiskarjalaisessa kesäateljeessaan hän on katsellut pienestä ikkunasta
+      näkyvää vastarantaa ja maalannut sen muuttuvaa luonnetta useiksi pieniksi
+      maalauksiksi. Maiseman muutosta tutkiessaan hän on myös aistinut työtilan
+      intensiivisen tunnelman ja menneen maailman tunnun. Together-ryhmä on
+      perustettu vuonna 2015, jolloin ryhmän teoksia oli esillä Vilnan
+      kaupungintalolla Joensuu – Vilna ystävyyskaupunkitoiminnan 45-vuotisjuhlan
+      yhteydessä.
+    </p>
+    
+    <div class="image-flex">
+      <figure>
+        <img src="images/JohannaTurunen1.jpg" />
+        <figcaption>Johanna Turunen: Maisemia, 2023 (12 x 25)</figcaption>
+      </figure>
+      <figure>
+        <img src="images/JohannaTurunen2.jpg" />
+        <figcaption>Johanna Turunen: Maisemia, 2023 (12 x 25)</figcaption>
+      </figure>
+    </div>
+    
       `,
     description: "",
     clock: "",

@@ -326,6 +326,7 @@ body {
 
 .image-flex figure {
   text-align: center;
+  width: 100%;
 }
 
 .video-container {
