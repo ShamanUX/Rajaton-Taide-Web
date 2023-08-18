@@ -176,9 +176,17 @@ var eventData = {
   },
   lasten: {
     title: "Lasten Botania",
-    customDescription: "",
-    description:
-      "Lapsille kivoja musiikillisia askareita Botanian trooppisissa tiloissa!",
+    customDescription: `<p>Lapsille kivoja musiikillisia esityksiä Botanian trooppisissa tiloissa!</p>
+
+      <p>Mukana menossa:</p>
+      <ul>
+        <li>Sirkus Supiainen</li>
+        <li>Teatteri Traktori</li>
+        <li>Tanssiryhmä Cat People</li>
+        <li>Orkesteri "TV:stä Tunnetut"</li>
+      </ul>
+      `,
+    description: " ",
     clock: "11-15",
     date: "Sunnuntai 27.8.",
     price: "5€ / Perhelippu 20€ (6 henkeä)",

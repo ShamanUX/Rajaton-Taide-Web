@@ -359,6 +359,10 @@ body {
   src: url("fonts/LegaultStd.otf");
 }
 
+ul li {
+  font-family: "Merriweather", serif;
+}
+
 ol li {
   font-family: "Merriweather", serif;
 }
