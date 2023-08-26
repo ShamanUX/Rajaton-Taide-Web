@@ -91,7 +91,7 @@ var eventData = {
         <hr />
         <p><strong>Osa kaksi: Onni Muikun teoksia</strong></p>
         <p>Karjalan kev&auml;&auml;n nimell&auml; kulkevassa kokonaisuudessa esitet&auml;&auml;n Onni Muikun teoksia, jotka ovat saaneet inspiraationsa karjalan kauniista luonnosta. 
-        Teoksen ovat sovittaneet Istan Zaborsky ja Arto Tarkkonen.</p>
+        Teoksen ovat sovittaneet István Zaborszky ja Arto Tarkkonen.</p>
         <p>Kokonaisuus koostuu seuraavista osista:</p>
         <ol>
         <li><em>Kev&auml;tt&auml; kohti</em>: Teoksen alussa tunnelmoidaan kev&auml;&auml;n odotusta ja kasvavaa toivoa.</li>
