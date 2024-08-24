@@ -19,7 +19,7 @@
         'Arto Tarkkonen, haitari',
         '<br>',
         'Solistit: ',
-        'Johanna Vehviläinen, laulu',
+        'Juliana Vehviläinen, laulu',
         'Matilda Nikkinen, laulu',
         'Johannes Manninen, kitara',
         'Furkan Karsavuran, laulu',
@@ -43,7 +43,7 @@
         'Lumi Ollila',
         'Tiia Turunen',
         '<br>',
-        '<strong> Taiga </strong>-trio, aiemmin Rajaton Taide konserteissa Taiga-kvartetti -nimellä esiintynyt orkesteri, on vankka kokoonpano klassisen musiikin ammattilaisia. Kuin vuoreen, kuulijat voivat luottaa että Taiga vie tulkinnoillaan unohtumattomalle matkalle.',
+        '<strong> Taiga </strong> á3, tässä konsertissa triona esiintyvä yhtye, on vankka kokoonpano klassisen musiikin ammattilaisia. Vuonna 2019 perustettu yhtye on tullut tunnetuksi monipuolisesta ohjelmistosta, aktiivisesta yhteistyöstä Pohjois-Karjalan kulttuuritoimijoiden kanssa, sekä ahkerasta aikamme musiikin esille tuomisesta. Taiga on esiintynyt Rajaton Taide konserteissa useita kertoja. Kuin vuoreen, kuulijat voivat luottaa, että Taiga vie tulkinnoillaan unohtumattomalle matkalle – tällä kertaa rakkaudesta syntyneiden teosten maailmaan.',
         '<br>',
         'Hans Lodders',
         'Sakari Tervo',
@@ -70,7 +70,7 @@
 
 <script setup lang="ts">
 import InfoCard from "@/components/InfoCard.vue";
-import HalkiAikojenKuva from "@/assets/Halki Aikojen kuva.png";
+import HalkiAikojenKuva from "@/assets/Halki Aikojen kuva.jpg";
 import JuhlaKonserttiKuva from "@/assets/Juhlakonsertti Kemal 60.jpg";
 import ElectroJungleKuva from "@/assets/ElectroJungle_7-9-24_Kide.png";
 </script>
